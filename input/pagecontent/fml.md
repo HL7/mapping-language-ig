@@ -1,14 +1,5 @@
-<!DOCTYPE HTML>
-[%settitle FHIR Mapping Language%]
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-[%file newheader%]
-</head>
-<body>
-[%file newnavbar%]
 
-<h2>FHIR Mapping Language</h2>
-<table class="colsn"><tr><td id="wg">Responsible Owner: <a _target="blank" href="[%wg fhir%]">[%wgt fhir%]</a> Work Group</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:<!--!ns!--><a href="versions.html#std-process">Normative</a></td></tr></table>
+### FHIR Mapping Language
 
 <p>
 The FHIR Specification includes a mapping language. The mapping language has a concrete syntax, defined
@@ -953,8 +944,3 @@ produced
 conceptMap
 prefix
 </pre>
-[%file newfooter%]
-
-</body>
-
-</html>

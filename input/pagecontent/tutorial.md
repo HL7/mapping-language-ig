@@ -1,20 +1,4 @@
-<!DOCTYPE HTML>
-
-
-
-[%settitle FHIR Mapping Language - Tutorial%]
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-[%file newheader%]
-</head>
-<body>
-[%file newnavbar%]
-
-
-
-
-<h2>FHIR Mapping Language - Tutorial</h2>
-<table class="colsi"><tr><td id="wg">Responsible Owner: <a _target="blank" href="[%wg fhir%]">[%wgt fhir%]</a> Work Group</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:<!--!ns!--><a href="versions.html#std-process">Informative</a></td></tr></table>
+### FHIR Mapping Language - Tutorial
 
 <p>
 This tutorial introduces the FHIR <a href="mapping-language.html">mapping language</a>.
@@ -592,9 +576,3 @@ identified by src.ptr, and create a variable for it
 This specification includes transforms that map between version R4B and this version (R5). These 
 map files exercise quite a bit of the mapping language grammar, and can be found at <a href="r4maps.html">Transforms between R4 and R5 </a>
 </p>
-
-[%file newfooter%]
-
-</body>
-
-</html>
