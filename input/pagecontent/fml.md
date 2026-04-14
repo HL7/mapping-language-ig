@@ -3,15 +3,15 @@
 
 <p>
 The FHIR Specification includes a mapping language. The mapping language has a concrete syntax, defined
-and described in this page, and an abstract syntax, which is found in the <a href="structuremap.html">StructureMap</a>
-resource. See also the <a href="mapping-tutorial.html">Tutorial</a>.
+and described in this page, and an abstract syntax, which is found in the <a href="https://hl7.org/fhir/structuremap.html">StructureMap</a>
+resource. See also the <a href="tutorial.html">Tutorial</a>.
 </p>
 <p>
 The mapping language describes how one set of Directed Acyclic Graphs (an instance) is transformed to another set of
 directed acyclic graphs. It is not necessary for the instances to have formal declarations and/or be
 strongly typed - just that they have named children that themselves have properties. On the other hand,
 when the instances are strongly typed - specifically, when they have formal definitions that are represented as
-<a href="structuredefinition.html">Structure Definitions</a>, the mapping language can use additional type
+<a href="https://hl7.org/fhir/structuredefinition.html">Structure Definitions</a>, the mapping language can use additional type
 related features.
 </p>
 <p>
@@ -31,7 +31,7 @@ A map has 7 parts:
 </p>
 <ul>
  <li>Metadata</li>
- <li>Embedded <a href="conceptmap.html">ConceptMaps</a> to translate between different code systems</li>
+ <li>Embedded <a href="https://hl7.org/fhir/conceptmap.html">ConceptMaps</a> to translate between different code systems</li>
  <li>References to the structures involved in the mapping</li>
  <li>Imports: additional Maps used by this map</li>
  <li>Constants: constants used in the mapping rules</li>
@@ -40,7 +40,7 @@ A map has 7 parts:
 </ul>
 <p>
   The Mapping Language and the <code>StructureMap</code> resource are built 
-  on top of <a href="fhirpath.html">FHIRPath</a>, and a FHIRPath implementation is required in order to 
+  on top of <a href="https://hl7.org/fhir/fhirpath.html">FHIRPath</a>, and a FHIRPath implementation is required in order to 
   execute a StructureMap.
   </p>
   
@@ -94,7 +94,7 @@ at the end of the line as a comment.
 </p>
 <p>
 All names defined by the map language - group, rule and variable names - must be valid
-<a href="datatypes.html#id">ids</a> (1-64 characters, upper and lowercase letters, numbers, dashes and dots). 
+<a href="https://hl7.org/fhir/datatypes.html#id">ids</a> (1-64 characters, upper and lowercase letters, numbers, dashes and dots). 
 To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used
 in the language (see section <a href="#reserved">Reserved Keywords</a> below) and cannot contain a dot or dash.
 These id values SHALL NOT be surrounded with backticks.
@@ -189,7 +189,7 @@ application has content in one format, creates an empty instance of the target, 
 </p>
 <p>
 However, many mappings are not so simple. For instance, converting from a single CDA document to FHIR typically
-creates a set of resources. In this case, there is a single target - a <a href="bundle.html">Bundle</a>, but it
+creates a set of resources. In this case, there is a single target - a <a href="https://hl7.org/fhir/bundle.html">Bundle</a>, but it
 is also useful to specify a set of other structure definitions for resources that may be created as part of the bundle. Alternatively, converting from one source model to another might involve looking up other information in other instances of data.
 </p>
 <p>
@@ -528,7 +528,7 @@ The following list specifies that transforms that can be specified. Each transfo
  <tr>
   <td>translate</td> 
   <td>source, map_uri, output</td> 
-  <td>use the <a href="conceptmap-operation-translate.html">translate operation</a>. The source is some type of code or coded datatype, and the source and map_uri are passed to the translate operation. The output determines what value from the translate operation is used for the result of the operation (code, system, display, Coding, or CodeableConcept)</td>
+  <td>use the <a href="https://hl7.org/fhir/conceptmap-operation-translate.html">translate operation</a>. The source is some type of code or coded datatype, and the source and map_uri are passed to the translate operation. The output determines what value from the translate operation is used for the result of the operation (code, system, display, Coding, or CodeableConcept)</td>
   <td>%terminologies.translate()</td>
  </tr>
  <tr>
@@ -596,12 +596,12 @@ The following list specifies that transforms that can be specified. Each transfo
   <td>pointer</td> 
   <td>resource</td> 
   <td>Return the appropriate string to put in a Reference that refers to the resource provided as a parameter</td>
-  <td>related to <a href="fhirpath.html#functions">resolve()</a></td>
+  <td>related to <a href="https://hl7.org/fhir/fhirpath.html#functions">resolve()</a></td>
  </tr>
  <tr>
   <td>translate</td> 
   <td>(varies)</td> 
-  <td>translate(source, uri_of_map) - use the <a href="fhirpath.html#txapi">translate operation</a></td>
+  <td>translate(source, uri_of_map) - use the <a href="https://hl7.org/fhir/fhirpath.html#txapi">translate operation</a></td>
   <td>n/a</td>
  </tr>
  <tr>
@@ -615,31 +615,31 @@ The following list specifies that transforms that can be specified. Each transfo
   <td>cc</td> 
   <td>(text) or (system. Code[, display])</td> 
   <td>Create a CodeableConcept from the parameters provided</td>
-  <td><a href="fhirpath.html#fn-factory-CodeableConcept">%factory.CodeableConcept()</a>"></td>
+  <td><a href="https://hl7.org/fhir/fhirpath.html#fn-factory-CodeableConcept">%factory.CodeableConcept()</a>"></td>
  </tr>
  <tr>
   <td>c</td> 
   <td>system. Code[, display]</td> 
   <td>Create a Coding from the parameters provided</td>
-  <td><a href="fhirpath.html#fn-factory-Coding">%factory.Coding()</a>"></td>
+  <td><a href="https://hl7.org/fhir/fhirpath.html#fn-factory-Coding">%factory.Coding()</a>"></td>
  </tr>
  <tr>
   <td>qty</td> 
   <td>(text) or (value, unit, [system, code])</td> 
   <td>Create a quantity. Parameters = (text) or (value, unit, [system, code]) where text =s the natural representation e.g., [comparator]value[space]unit</td>
-  <td><a href="fhirpath.html#fn-factory-Quantity">%factory.Quantity()</a>"></td>
+  <td><a href="https://hl7.org/fhir/fhirpath.html#fn-factory-Quantity">%factory.Quantity()</a>"></td>
  </tr>
  <tr>
   <td>id</td> 
   <td>system, value[, type]</td> 
   <td>Create an identifier. where type is a code from the identifier type value set</td>
-  <td><a href="fhirpath.html#fn-factory-Identifier">%factory.Identifier()</a>"></td>
+  <td><a href="https://hl7.org/fhir/fhirpath.html#fn-factory-Identifier">%factory.Identifier()</a>"></td>
  </tr>
  <tr>
   <td>cp</td> 
   <td>(value) or (system, value)</td> 
   <td>Create a contact detail. If no system is provided, the system should be inferred from the content of the value</td>
-  <td><a href="fhirpath.html#fn-factory-ContactPoint">%factory.ContactPoint()</a>"></td>
+  <td><a href="https://hl7.org/fhir/fhirpath.html#fn-factory-ContactPoint">%factory.ContactPoint()</a>"></td>
  </tr>
 </table>
 

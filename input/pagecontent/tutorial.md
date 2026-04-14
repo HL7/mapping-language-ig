@@ -1,7 +1,7 @@
 ### FHIR Mapping Language - Tutorial
 
 <p>
-This tutorial introduces the FHIR <a href="mapping-language.html">mapping language</a>.
+This tutorial introduces the FHIR <a href="fml.html">mapping language</a>.
 </p>
 <a name="step1"></a>
 <h3>Step #1: Simplest possible transform</h3>
@@ -306,14 +306,14 @@ A common translation pattern is to perform a translation e.g., from one set of c
   <tr><td colspan="2">The left instance is transformed to the right instance by translating src.d from one set of codes to another</td></tr>
 </table>
 <p>
-The key to this transformation is the <a href="conceptmap.html">ConceptMap</a> resource, which
+The key to this transformation is the <a href="https://hl7.org/fhir/conceptmap.html">ConceptMap</a> resource, which
 actually specifies the mapping from one set of codes to the other:
 </p>
 <pre>
 src.d as d -&gt; tgt.d = translate(d, 'uri-of-concept-map', 'code');
 </pre>
 <p>
-This asks the mapping engine to use the <a href="conceptmap-operation-translate.html">$translate</a>
+This asks the mapping engine to use the <a href="https://hl7.org/fhir/conceptmap-operation-translate.html">$translate</a>
 operation on the terminology server to translate the code using a specified concept map, and then to
 put the code value of the return translation in tgt.d.
 </p>
@@ -338,7 +338,7 @@ value of another element.
   <tr><td colspan="2">How the left instance is transformed to the right instance depends on the value of m: if m &lt; 2, then i maps to j, else it maps to k</td></tr>
 </table>
 <p>
-This is managed using <a href="fhirpath.html">FHIRPath</a> conditions on the mapping statements:
+This is managed using <a href="https://hl7.org/fhir/fhirpath.html">FHIRPath</a> conditions on the mapping statements:
 </p>
 <pre>
 src.i as i where m &lt; 2 -&gt; tgt.j = i;
