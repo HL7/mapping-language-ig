@@ -1,0 +1,63 @@
+id: hl7.fhir.uv.fml
+canonical: http://hl7.org/fhir/uv/fml
+version: 0.1.0
+name: FML
+title: FHIR Mapping Language (FML)
+status: active
+publisher:
+  name: HL7 International / FHIR Infrastructure
+  url: http://www.hl7.org/Special/committees/fiwg
+contact:
+    telecom:
+      - system: url
+        value: http://www.hl7.org/Special/committees/fiwg
+description: The FHIR Mapping Language (FML) specification is a Domain Specific Language (DSL) for describing how to transform data from one structure to another. It is designed to be used in the context of FHIR, but can be applied to any data transformation use case.
+license: CC0-1.0
+fhirVersion: 5.0.0
+instanceOptions:
+  manualSliceOrdering: true
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  globals-in-artifacts: true
+  show-inherited-invariants: false
+  shownav: false
+  path-pages:
+    - input/pagecontent
+
+copyrightYear: 2022+
+releaseLabel: STU 1
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: "trial-use"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: "3"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: "fhir"
+
+dependencies:
+
+pages:
+  index.md:
+    title: Home
+  fml.md:
+    title: Specification
+  transforms.md:
+    title: Target Transform Functions
+  grammar.md:
+    title: FML Grammar
+  tutorial.md:
+    title: FML Tutorial
+  changes.md:
+    title: Change Log
+
+menu:
+  Home: index.html
+  Specification: fml.html
+  Transforms: transforms.html
+  Grammar: grammar.html
+  Tutorial: tutorial.html
+  FHIR Artifacts:
+      Examples: artifacts.html
+      Change Log: changes.html

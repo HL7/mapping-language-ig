@@ -1,0 +1,82 @@
+== Suppressed Messages ==
+
+# jurisdiction valueset not really deprecated
+INFORMATION: StructureMap/SourceListNotLast: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/ConceptMapEmbedded: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/Constants: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/DependentGroup: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/DependentInline: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/DependentMultiGroup: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/GroupBasic: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/GroupExtends: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/GroupTypePlus: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/GroupTypes: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/Imports: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/MetadataBasic: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/MetadataExtended: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SimpleBatch: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SimpleIdentity: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceCardinality: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceCheck: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceCopy: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceDefault: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceListFirst: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceListLast: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceListNotFirst: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceListNotLast: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceListOnlyOne: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceLog: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceMultiple: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceTypeFilter: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SourceWhere: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/StructArrayToArray: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/StructArrayToProp: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/StructNestedToTop: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/StructPropToArray: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/StructTopToNested: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/SyntaxBackticks: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TargetMultiple: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TargetSubelement: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformAppend: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformC: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformCast: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformCc: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformCp: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformCreate: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformEvaluate: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformId: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformQty: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformReference: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformToDate: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformToDateTime: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformToTime: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformTranslate: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformTruncate: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/TransformUuid: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/UsesAlias: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/UsesQueriedProduced: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureMap/UsesSourceTarget: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# experimental CodeSystem used by IG parameters
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[20].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[21].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[22].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[23].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[24].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.definition.parameter[30].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+
+# Other warning/info messages
+INFORMATION: en/fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
+
