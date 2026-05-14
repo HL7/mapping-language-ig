@@ -1,0 +1,16 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToArray"
+/// name = "StructArrayToArray"
+/// status = "active"
+/// description = "Example demonstrating mapping a repeating source array to a repeating target array"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group StructArrayToArray(source src : Patient, target tgt : Patient) {
+  // one target name created for each source name
+  src.name as sn -> tgt.name as tn then {
+    sn.family as f -> tn.family = f "r1";
+    sn.given as g -> tn.given = g "r2";
+    sn.use as u -> tn.use = u "r3";
+  } "r4";
+}

@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceLog"
+/// name = "SourceLog"
+/// status = "active"
+/// description = "Example demonstrating the log statement for writing to the application log"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceLog(source src : Patient, target tgt : Patient) {
+  src.id as v log ('Processing patient id: ' & v) -> tgt.id = v "r1";
+}

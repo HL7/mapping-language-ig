@@ -1,0 +1,19 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TargetListModes"
+/// name = "TargetListModes"
+/// status = "active"
+/// description = "Example demonstrating target list modes: first, last, share, and single"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TargetListModes(source src : Patient, target tgt : Patient) {
+  // insert as first element in the target list
+  src.name as v -> tgt.name as tn first then {
+    v.family as f -> tn.family = f "r1";
+  } "r2";
+
+  // share a single target element across multiple rule applications
+  src.identifier as v -> tgt.name as tn share then {
+    v.value as val -> tn.text = val "r3";
+  } "r4";
+}

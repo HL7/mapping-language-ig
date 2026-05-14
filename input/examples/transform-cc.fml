@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformCc"
+/// name = "TransformCc"
+/// status = "active"
+/// description = "Example demonstrating the cc transform to create a CodeableConcept"
+
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+
+group TransformCc(source src : Basic, target tgt : Basic) {
+  src -> tgt.code = cc('http://example.org/cs', 'example', 'Example Code') "r1";
+}

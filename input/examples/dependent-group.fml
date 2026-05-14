@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/DependentGroup"
+/// name = "DependentGroup"
+/// status = "active"
+/// description = "Example demonstrating invoking another group by name using then GroupName(params)"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+uses "http://hl7.org/fhir/StructureDefinition/HumanName" as source
+uses "http://hl7.org/fhir/StructureDefinition/HumanName" as target
+
+group DependentGroup(source src : Patient, target tgt : Patient) {
+  src.name as sn -> tgt.name as tn then CopyName(sn, tn) "r1";
+}
+
+group CopyName(source src : HumanName, target tgt : HumanName) {
+  src.family as v -> tgt.family = v;
+  src.given as v -> tgt.given = v;
+}

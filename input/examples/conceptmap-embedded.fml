@@ -1,0 +1,23 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/ConceptMapEmbedded"
+/// name = "ConceptMapEmbedded"
+/// status = "active"
+/// description = "Example Map to demonstrate an embedded ConceptMap"
+
+// Bug: parser rejects # prefix in conceptmap identifier per spec
+// conceptmap "#GenderMap" {
+conceptmap "GenderMap" {
+  prefix s = "http://hl7.org/fhir/administrative-gender"
+  prefix t = "http://example.org/gender"
+
+  s:male - t:M
+  s:female - t:F
+  s:other - t:O
+  s:unknown - t:U
+}
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group ConceptMapEmbedded(source src : Patient, target tgt : Patient) {
+  src.gender as v -> tgt.gender = translate(v, '#GenderMap', 'code') "r1";
+}

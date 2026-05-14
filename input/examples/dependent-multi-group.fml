@@ -1,0 +1,21 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/DependentMultiGroup"
+/// name = "DependentMultiGroup"
+/// status = "active"
+/// description = "Example demonstrating invoking multiple groups in sequence separated by commas"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+uses "http://hl7.org/fhir/StructureDefinition/HumanName" as source
+uses "http://hl7.org/fhir/StructureDefinition/HumanName" as target
+
+group DependentMultiGroup(source src : Patient, target tgt : Patient) {
+  src.name as sn -> tgt.name as tn then CopyFamily(sn, tn), CopyGiven(sn, tn) "r1";
+}
+
+group CopyFamily(source src : HumanName, target tgt : HumanName) {
+  src.family as v -> tgt.family = v;
+}
+
+group CopyGiven(source src : HumanName, target tgt : HumanName) {
+  src.given as v -> tgt.given = v;
+}

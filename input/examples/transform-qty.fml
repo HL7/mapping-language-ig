@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformQty"
+/// name = "TransformQty"
+/// status = "active"
+/// description = "Example demonstrating the qty transform to create a Quantity"
+
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as source
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
+
+group TransformQty(source src : Observation, target tgt : Observation) {
+  src -> tgt.value = qty(42, 'kg', 'http://unitsofmeasure.org', 'kg') "r1";
+}

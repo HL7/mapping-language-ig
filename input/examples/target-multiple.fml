@@ -1,0 +1,12 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TargetMultiple"
+/// name = "TargetMultiple"
+/// status = "active"
+/// description = "Example demonstrating multiple target assignments in a single rule"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TargetMultiple(source src : Patient, target tgt : Patient) {
+  // set both id and active in a single rule
+  src.id as v -> tgt.id = v, tgt.active = true "r1";
+}

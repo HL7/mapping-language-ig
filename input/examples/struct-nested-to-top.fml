@@ -1,0 +1,16 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructNestedToTop"
+/// name = "StructNestedToTop"
+/// status = "active"
+/// description = "Example demonstrating pulling a nested child element up to a top-level property"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group StructNestedToTop(source src : Patient, target tgt : Patient) {
+  // pull nested contact.name.family up into top-level id
+  src.contact as c then {
+    c.name as cn then {
+      cn.family as f -> tgt.id = f "r1";
+    } "r2";
+  } "r3";
+}

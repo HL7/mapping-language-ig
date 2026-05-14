@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/UsesQueriedProduced"
+/// name = "UsesQueriedProduced"
+/// status = "active"
+/// description = "Example demonstrating queried and produced modes in uses declarations"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target
+//uses "http://hl7.org/fhir/StructureDefinition/Organization" as queried
+// uses "http://hl7.org/fhir/StructureDefinition/Provenance" as produced
+
+group UsesQueriedProduced(source src : Patient, target tgt : Bundle) {
+  src.id as v -> tgt.id = v "r1";
+}

@@ -1,0 +1,15 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructTopToNested"
+/// name = "StructTopToNested"
+/// status = "active"
+/// description = "Example demonstrating pushing a top-level property down into a nested structure"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group StructTopToNested(source src : Patient, target tgt : Patient) {
+  // push top-level id down into name.text
+  src.id as v -> tgt.name as tn then {
+    v -> tn.text = v "r1";
+    v -> tn.use = 'temp' "r2";
+  } "r3";
+}

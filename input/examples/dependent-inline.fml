@@ -1,0 +1,14 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/DependentInline"
+/// name = "DependentInline"
+/// status = "active"
+/// description = "Example demonstrating inline dependent rules in a then { } block"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group DependentInline(source src : Patient, target tgt : Patient) {
+  src.name as sn -> tgt.name as tn then {
+    sn.family as f -> tn.family = f "r1";
+    sn.given as g -> tn.given = g "r2";
+  } "r3";
+}

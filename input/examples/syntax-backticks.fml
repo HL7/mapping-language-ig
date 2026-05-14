@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SyntaxBackticks"
+/// name = "SyntaxBackticks"
+/// status = "active"
+/// description = "Example demonstrating backtick-escaped identifiers for reserved words and special characters"
+
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+
+group SyntaxBackticks(source src : Basic, target tgt : Basic) {
+  // backticks allow reserved words and special chars as element names
+  src.`group` as v -> tgt.`group` = v;
+  src.`section4.5` as v -> tgt.`section4.5` = v;
+}

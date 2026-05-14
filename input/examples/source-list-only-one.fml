@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceListOnlyOne"
+/// name = "SourceListOnlyOne"
+/// status = "active"
+/// description = "Example demonstrating the only_one list option that errors on multiple elements"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceListOnlyOne(source src : Patient, target tgt : Patient) {
+  src.name only_one as v -> tgt.name as t then {
+    v.family as f -> t.family = f "r1";
+  } "r2";
+}

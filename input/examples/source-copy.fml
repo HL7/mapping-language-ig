@@ -1,0 +1,12 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceCopy"
+/// name = "SourceCopy"
+/// status = "active"
+/// description = "Example demonstrating a simple copy of a source element to a target element"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceCopy(source src : Patient, target tgt : Patient) {
+  // copies src.active to tgt.active via variable 'v'
+  src.active as v -> tgt.active = v;
+}

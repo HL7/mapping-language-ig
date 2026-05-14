@@ -1,0 +1,12 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceCardinality"
+/// name = "SourceCardinality"
+/// status = "active"
+/// description = "Example demonstrating cardinality constraints on source elements"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceCardinality(source src : Patient, target tgt : Patient) {
+  // error if src has zero or more than one id
+  src.id 1..1 as v -> tgt.id = v "r1";
+}

@@ -129,7 +129,7 @@ syntax <code>/// name{.property}* = {value} </code> where:
 <p>
 Examples:
 </p>
-<pre>
+<pre class="fml">
 /// url = 'http://hl7.org/fhir/StructureMap/CodeSystem3to4'
 /// name = 'CodeSystemR3R4'
 /// title = 'R3 to R4 Conversions for CodeSystem'
@@ -157,7 +157,7 @@ If no value is provided for <code>status</code>, then the status "draft" is assu
 The next optional section of the map references the set of structure definitions
 that are used or produced by this map. For example:
 </p>
-<pre>
+<pre class="fml">
   uses "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem" alias CodeSystemR3 as source   // documentation
   uses "http://hl7.org/fhir/StructureDefinition/CodeSystem" as target  // documentation
 </pre>
@@ -180,7 +180,7 @@ There are 4 modes in which a structure definition may be used:
  <li><b>source</b>: One of more instances of this type are passed to the mapping engine when the mapping is executed, and serve as the source from which mapping is performed</li>
  <li><b>queried</b>: The map may ask the (via the API) for some instances of this type. For further discussion, see <a href="#api">below</a></li>
  <li><b>target</b>: One or more instances of this type are passed in, and will be populated from the source material</li>
- <li><b>produced</b>: The map may ask (via the API) for some instances of this type to be created. For further discussion, see <a href="#api">below</a></li>
+ <li><b>produced</b>: The map may request for some instances of this type to be created using the <code>create('type')</code> transform.</li>
 </ul>
 <p>
 The simplest case, which is common, is where a single structure is converted to another single structure. in
@@ -203,7 +203,7 @@ and such maps typically require special development to integrate the execution o
 <p>
 This next optional section references additional maps that are used by this map. For example:
 </p>
-<pre>
+<pre class="fml">
   imports "http://hl7.org/fhir/StructureMap/*3to4"  // documentation
 </pre>
 <p>
@@ -258,7 +258,7 @@ group [group-name] (inputs) (extends [other-group]) (&lt;&lt;stereotype&gt;&gt;)
 }  
 </pre>
 For example:
-<pre>
+<pre class="fml">
   group CodeSystem(source src : CodeSystemR3, target tgt : CodeSystem) extends DomainResource &lt;&lt;type+&gt;&gt;
   {
     // documentation
@@ -309,7 +309,7 @@ looks like this:
 src_context.field as new_variable where (condition) -&gt; tgt_context.field = create([type]) as new_variable then [details] "name";
 </pre>
 For example:
-<pre>
+<pre class="fml">
 src.value : code as vs0 -> tgt.value = create("code") as vt0 then code(vs0, vt0) "valueCode";
 </pre>
 <p>
@@ -351,7 +351,7 @@ context.element {: type} {min..max} {default ([value])} { list-option } as varia
 <p>
     For example:
 </p>
-<pre>
+<pre class="fml">
   src.value : integer 0..* default (10) first as vs0
     where (value &gt;= 10) check (value &lt;= 100)
     log (value)
@@ -457,7 +457,7 @@ Each [target] contains the following items:
   context.element = transform_code(parameters...) as variable {list_modes}
 </pre>
 <p>For example:</p>
-<pre>
+<pre class="fml">
   context.element = copy(parameter, ...) as vt1 first
 </pre>
 
@@ -480,7 +480,8 @@ Transform statements may just contain an invocation of a transform function. In 
 Each time the rule is applied, the engine determines the value from the transforms, considers the list mode, if required and creates that specified content in the target instance. Within a target transform, the target statements are processed in order, so that a transform statement may refer to a variable defined by a prior transform statement.
 </p>
 <p>
-The following list specifies that transforms that can be specified. Each transform takes one or more parameters:
+The following list specifies that transforms that can be specified. Each transform takes one or more parameters:<br/>
+More detailed documentation on the transform functions can be found [here](transforms.html).
 </p>
 <table class="grid">
  <tr>
@@ -941,6 +942,7 @@ source
 target
 queried
 produced
-conceptMap
+conceptmap
 prefix
+let
 </pre>

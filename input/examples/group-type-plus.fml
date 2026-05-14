@@ -1,0 +1,12 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/GroupTypePlus"
+/// name = "GroupTypePlus"
+/// status = "active"
+/// description = "Example demonstrating the type+ stereotype that also creates the target type when not fixed"
+
+uses "http://hl7.org/fhir/StructureDefinition/Identifier" as source
+uses "http://hl7.org/fhir/StructureDefinition/Identifier" as target
+
+group GroupTypePlus(source src : Identifier, target tgt : Identifier) <<type+>> {
+  src.system as v -> tgt.system = v;
+  src.value as v -> tgt.value = v;
+}

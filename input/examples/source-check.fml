@@ -1,0 +1,12 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceCheck"
+/// name = "SourceCheck"
+/// status = "active"
+/// description = "Example demonstrating the check clause that raises an error on failed conditions"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceCheck(source src : Patient, target tgt : Patient) {
+  // error if id is longer than 64 characters
+  src.id as v check (v.length() <= 64) -> tgt.id = v "r1";
+}

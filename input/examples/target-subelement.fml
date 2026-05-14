@@ -1,0 +1,17 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TargetSubelement"
+/// name = "TargetSubelement"
+/// status = "active"
+/// description = "Example demonstrating target sub-element access using dot notation"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TargetSubelement(source src : Patient, target tgt : Patient) {
+  // directly access sub-element without intermediate variable
+  src.name as v -> tgt.name as tn then {
+    v.family as f -> tn.family = f "r1";
+  } "r2";
+  src.contact as c, c.name as cn -> tgt.contact as tc, tc.name as tn then {
+    cn.family as f -> tn.family = f "r3";
+  } "r4";
+}

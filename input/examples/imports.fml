@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/Imports"
+/// name = "Imports"
+/// status = "active"
+/// description = "Example demonstrating the imports statement with wildcard support"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+imports "http://hl7.org/fhir/uv/fml/StructureMap/Helper*"
+
+group Imports(source src : Patient, target tgt : Patient) {
+  src.id as v -> tgt.id = v;
+}

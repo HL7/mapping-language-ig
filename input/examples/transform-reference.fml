@@ -1,0 +1,15 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformReference"
+/// name = "TransformReference"
+/// status = "active"
+/// description = "Example demonstrating the reference transform to generate a resource reference"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" as produced
+
+group TransformReference(source src : Patient, target tgt : Bundle) {
+  src -> create('Encounter') as enc, tgt.entry as entry then {
+    src -> entry.resource = enc "r1";
+    src.id as v -> enc.subject = reference(src) "r2";
+  } "referenceTest";
+}

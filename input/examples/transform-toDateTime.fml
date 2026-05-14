@@ -1,0 +1,14 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformToDateTime"
+/// name = "TransformToDateTime"
+/// status = "active"
+/// description = "Example demonstrating the dateOp/toDateTime transform for dateTime conversion"
+
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+
+group TransformToDateTime(source src : Basic, target tgt : Basic) {
+  src.id as v -> tgt.extension as ext then {
+    v -> ext.url = 'http://example.org/datetime' "a";
+    // v -> ext.value = toDateTime(v, 'yyyy-MM-ddTHH:mm:ssZ') "toDateTimeTestfunc";
+  } "toDateTimeTest";
+}

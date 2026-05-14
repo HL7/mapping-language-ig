@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/UsesAlias"
+/// name = "UsesAlias"
+/// status = "active"
+/// description = "Example demonstrating the alias keyword for uses declarations"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias PatientR3 as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group UsesAlias(source src : PatientR3, target tgt : Patient) {
+  src.id as v -> tgt.id = v "r1";
+}

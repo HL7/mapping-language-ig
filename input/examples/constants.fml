@@ -1,0 +1,14 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/Constants"
+/// name = "Constants"
+/// status = "active"
+/// description = "Example demonstrating reusable constants defined with the let keyword"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+let defaultSystem = 'http://example.org/systems/id';
+let maxLen = 20;
+
+group Constants(source src : Patient, target tgt : Patient) {
+  src.id as v -> tgt.id = truncate(v, maxLen) "r1";
+}

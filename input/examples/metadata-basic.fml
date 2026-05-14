@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/MetadataBasic"
+/// name = "MetadataBasic"
+/// status = "active"
+/// description = "Example demonstrating required metadata: url, name, and status"
+
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+
+group MetadataBasic(source src : Basic, target tgt : Basic) {
+  src.id as v -> tgt.id = v;
+}

@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformCreate"
+/// name = "TransformCreate"
+/// status = "active"
+/// description = "Example demonstrating the create transform to construct a new typed instance"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformCreate(source src : Patient, target tgt : Patient) {
+  src.name as v -> tgt.name = create('HumanName') as tn then {
+    v.family as f -> tn.family = f "r1";
+  } "r2";
+}

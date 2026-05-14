@@ -1,0 +1,25 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/MetadataExtended"
+/// name = "MetadataExtended"
+/// status = "active"
+/// title = "Extended Metadata Example"
+/// description = "Example demonstrating extended metadata including title, experimental, jurisdiction, and markdown description"
+// Bug: parser rejects boolean literal for experimental per spec
+// /// experimental = true
+// Bug: parser rejects complex metadata (jurisdiction) per spec
+// /// jurisdiction =
+// /// jurisdiction.coding =
+// /// jurisdiction.coding.system = "urn:iso:std:iso:3166"
+// /// jurisdiction.coding.code = "US"
+
+// Bug: Parser doesn't handle multi-line comments
+// /// description = """
+// This is a **multi-line** markdown description.
+// It demonstrates the extended metadata capabilities.
+// """
+
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+
+group MetadataExtended(source src : Basic, target tgt : Basic) {
+  src.id as v -> tgt.id = v;
+}

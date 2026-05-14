@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformCp"
+/// name = "TransformCp"
+/// status = "active"
+/// description = "Example demonstrating the cp transform to create a ContactPoint"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformCp(source src : Patient, target tgt : Patient) {
+  src -> tgt.telecom = cp('phone', '555-0100') "r1";
+}

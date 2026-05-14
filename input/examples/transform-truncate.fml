@@ -1,0 +1,12 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformTruncate"
+/// name = "TransformTruncate"
+/// status = "active"
+/// description = "Example demonstrating the truncate transform to limit string length"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformTruncate(source src : Patient, target tgt : Patient) {
+  // truncate the id to 20 characters
+  src.id as v -> tgt.id = truncate(v, 20) "r1";
+}

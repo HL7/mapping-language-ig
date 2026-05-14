@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceDefault"
+/// name = "SourceDefault"
+/// status = "active"
+/// description = "Example demonstrating the default keyword for fallback values"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceDefault(source src : Patient, target tgt : Patient) {
+  // if src.active is missing, defaults to true
+  // Bug: default value not surrounded with brackets
+  //src.active default (true) as v -> tgt.active = v;
+
+  // Bug: default value can't even handle a simple boolean
+  // src.active default true as v -> tgt.active = v "default-boolean";
+  src.active default 'true' as v -> tgt.active = v "default-boolean"; // note that this is explicitly 'true' case-sensitive
+  src.gender default 'unknown' as v -> tgt.gender = v "default-code";
+}

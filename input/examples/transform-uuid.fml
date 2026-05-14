@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformUuid"
+/// name = "TransformUuid"
+/// status = "active"
+/// description = "Example demonstrating the uuid transform to generate a unique identifier"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformUuid(source src : Patient, target tgt : Patient) {
+  src -> tgt.id = uuid() "r1";
+}

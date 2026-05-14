@@ -152,8 +152,8 @@ upperBound
   ;
 
 qualifiedIdentifier
-  : (ID | IDENTIFIER | 'imports' | 'source' | 'target' | 'group' | 'prefix' | 'map' | 'uses' | 'let' | 'types' | 'extends' | 'where' | 'check' | 'alias' | 'div' | 'contains' | 'as' | 'is' | 'asc' | 'desc' | 'first' | 'last' | 'sort' ) 
-    ('.' (ID | IDENTIFIER | 'imports' | 'source' | 'target' | 'group' | 'prefix' | 'map' | 'uses' | 'let' | 'types' | 'extends' | 'where' | 'check' | 'alias' | 'div' | 'contains' | 'as' | 'is' | 'asc' | 'desc' | 'first' | 'last' | 'sort'))*
+  : (DELIMITEDIDENTIFIER | ID | IDENTIFIER | 'imports' | 'source' | 'target' | 'group' | 'prefix' | 'map' | 'uses' | 'let' | 'types' | 'extends' | 'where' | 'check' | 'alias' | 'div' | 'contains' | 'as' | 'is' | 'asc' | 'desc' | 'first' | 'last' | 'sort' ) 
+    ('.' (DELIMITEDIDENTIFIER | ID | IDENTIFIER | 'imports' | 'source' | 'target' | 'group' | 'prefix' | 'map' | 'uses' | 'let' | 'types' | 'extends' | 'where' | 'check' | 'alias' | 'div' | 'contains' | 'as' | 'is' | 'asc' | 'desc' | 'first' | 'last' | 'sort'))*
   // : identifier ('.' identifier '[x]'?)*
   ;
 
@@ -270,7 +270,10 @@ sourceListMode
     ;
 
 targetListMode
-    : 'first' | 'share' | 'last' | 'single'
+    : 'first'
+    | 'share' ID    // ID is the listRuleId; rules sharing the same id are coalesced into one target instance
+    | 'last'
+    | 'single'
     ;
 
 groupTypeMode

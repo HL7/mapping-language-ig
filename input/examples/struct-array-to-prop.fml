@@ -1,0 +1,14 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToProp"
+/// name = "StructArrayToProp"
+/// status = "active"
+/// description = "Example demonstrating extracting a single value from an array into a scalar property"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group StructArrayToProp(source src : Patient, target tgt : Patient) {
+  // take the first name's family and put it into the scalar id
+  src.name first as v then {
+    v.family as f -> tgt.id = f "r1";
+  } "r2";
+}

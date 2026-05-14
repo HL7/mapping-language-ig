@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceListNotLast"
+/// name = "SourceListNotLast"
+/// status = "active"
+/// description = "Example demonstrating the not_last list option to skip the last element"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceListNotLast(source src : Patient, target tgt : Patient) {
+  src.name not_last as v -> tgt.name as t then {
+    v.family as f -> t.family = f "r1";
+  } "r2";
+}

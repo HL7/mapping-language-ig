@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformAppend"
+/// name = "TransformAppend"
+/// status = "active"
+/// description = "Example demonstrating the append transform to concatenate string values"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformAppend(source src : Patient, target tgt : Patient) {
+  src.name as v -> tgt.name as tn then {
+    v.family as f, v.text as t -> tn.text = append(f, ' ', t) "r1";
+  } "r2";
+}

@@ -1,0 +1,15 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructPropToArray"
+/// name = "StructPropToArray"
+/// status = "active"
+/// description = "Example demonstrating mapping a scalar property into a repeating array element"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group StructPropToArray(source src : Patient, target tgt : Patient) {
+  // map scalar id into a repeating identifier element
+  src.id as v -> tgt.identifier as ident then {
+    v -> ident.value = v "r1";
+    v -> ident.system = 'http://example.org/ids' "r2";
+  } "r3";
+}

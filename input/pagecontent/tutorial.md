@@ -569,10 +569,3 @@ identified by src.ptr, and create a variable for it
   }
 </pre>
 
-
-<a name="further"></a>
-<h3>Further examples</h3>
-<p>
-This specification includes transforms that map between version R4B and this version (R5). These 
-map files exercise quite a bit of the mapping language grammar, and can be found at <a href="r4maps.html">Transforms between R4 and R5 </a>
-</p>

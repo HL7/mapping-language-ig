@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformC"
+/// name = "TransformC"
+/// status = "active"
+/// description = "Example demonstrating the c transform to create a Coding"
+
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
+uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+
+group TransformC(source src : Basic, target tgt : Basic) {
+  src -> tgt.code as cc then {
+    src -> cc.coding = c('http://example.org/cs', 'test', 'Test Coding') "r1";
+  } "r2";
+}

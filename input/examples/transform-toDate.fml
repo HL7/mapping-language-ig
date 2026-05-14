@@ -1,0 +1,11 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformToDate"
+/// name = "TransformToDate"
+/// status = "active"
+/// description = "Example demonstrating the dateOp/toDate transform for date conversion"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformToDate(source src : Patient, target tgt : Patient) {
+  // src.id as v -> tgt.birthDate = toDate(v, 'yyyy-MM-dd');
+}

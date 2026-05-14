@@ -1,0 +1,14 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceWhere"
+/// name = "SourceWhere"
+/// status = "active"
+/// description = "Example demonstrating the where clause for filtering source elements with FHIRPath"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group SourceWhere(source src : Patient, target tgt : Patient) {
+  // only copy names where use is 'official'
+  src.name as v where (v.use = 'official') -> tgt.name as t then {
+    v.family as f -> t.family = f "r1";
+  } "r2";
+}
