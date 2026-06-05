@@ -58,6 +58,9 @@ Each example is a complete, parseable FML file demonstrating a single feature.
 | 53 | [Structure - Array to Array](#struct-array-to-array) | [struct-array-to-array.fml](StructureMap-StructArrayToArray.html) |
 | 54 | [Structure - Nested to Top Level](#struct-nested-to-top) | [struct-nested-to-top.fml](StructureMap-StructNestedToTop.html) |
 | 55 | [Structure - Top Level to Nested](#struct-top-to-nested) | [struct-top-to-nested.fml](StructureMap-StructTopToNested.html) |
+| 56 | [Variables - Using FHIRPath as a source](#tgt-fhirpath-source) | [fhirpath-source-as-var.fml](StructureMap-FhirPathSourceAsVar.html) |
+| 57 | [Comments - Round-trippable comments](#comments) | [comments.fml](StructureMap-Comments.html) |
+
 
 ---
 
@@ -657,4 +660,12 @@ value in a `then` dependent set of rules.
 
 ```fml
 {% fragment StructureMap/FhirPathSourceAsVar fml %}
+```
+
+<a name="comments"></a>
+#### 55. Comments - where FML supports round trippable comments with StructureMap
+Although FML can have comments pretty much anywhere, the StructureMap resource doesn't handle that, and this example shows all the places it can hold documentation in comments
+
+```fml
+{% fragment StructureMap/Comments fml %}
 ```
