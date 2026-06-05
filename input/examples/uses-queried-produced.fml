@@ -1,13 +1,16 @@
 /// url = "http://hl7.org/fhir/uv/fml/StructureMap/UsesQueriedProduced"
 /// name = "UsesQueriedProduced"
 /// status = "active"
-/// description = "Example demonstrating queried and produced modes in uses declarations"
+/// description = "Example demonstrating queried and produced modes in uses declarations - Only demonstrates produced, doesn't demonstrate queried."
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target
-//uses "http://hl7.org/fhir/StructureDefinition/Organization" as queried
-// uses "http://hl7.org/fhir/StructureDefinition/Provenance" as produced
+uses "http://hl7.org/fhir/StructureDefinition/HumanName" as produced
 
-group UsesQueriedProduced(source src : Patient, target tgt : Bundle) {
+group UsesQueriedProduced(source src : Patient, target tgt : Patient) {
   src.id as v -> tgt.id = v "r1";
+  src.name as v -> tgt.name = create('HumanName') as tn then {
+    v.family as f -> tn.family = f "setFamily";
+    v.given as f -> tn.given = f "setGiven";
+  } "r2";
 }
