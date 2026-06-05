@@ -12,7 +12,7 @@ group FhirPathSourceAsVar(source src : Patient, target tgt : Patient) {
     // use the stashed constant as a variable in a where clause to filter source elements
     src.name as sn -> tgt.name as tn then {
       sn.family as f -> tn.family = f, tn.extension as e, e.url = (extBase & 'family'), e.value = f "r1";
-      sn.prefix as f -> tn.prefix = f, tn.extension as e, e.url = (extBase & 'prefix'), e.value = f "r1";
+      sn.suffix as f -> tn.suffix = f, tn.extension as e, e.url = (extBase & 'suffix'), e.value = f "r1";
     } "r2";
   } "r3";
 }

@@ -1,0 +1,20 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/Comments"
+/// name = "Comments"
+/// status = "active"
+/// description = "Example demonstrating the use of comments in FML"
+
+// comment on source structure import
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+// comment on target structure import
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+// This is a comment on the group
+group CommentsDemo(source src : Patient, target tgt : Patient) {
+  // A comment preceding a rule R1
+  src.birthDate -> tgt.birthDate "R1";
+  src.active -> tgt.active "R2"; // A comment after R2
+  src.name as v -> tgt.name as tn then {
+    // before R3 comment
+    v.family -> tn.family "R3"; // after R3 comment
+  } "R4";
+}
