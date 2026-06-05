@@ -82,20 +82,6 @@ Maps can include title, experimental flag, jurisdiction, and multi-line markdown
 
 ```fml
 {% fragment StructureMap/MetadataExtended fml %}
-
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/MetadataExtended"
-/// name = "MetadataExtended"
-/// status = "active"
-/// title = "Extended Metadata Example"
-/// experimental = true
-/// jurisdiction =
-/// jurisdiction.coding =
-/// jurisdiction.coding.system = "urn:iso:std:iso:3166"
-/// jurisdiction.coding.code = "US"
-/// description = """
-This is a **multi-line** markdown description.
-It demonstrates the extended metadata capabilities.
-"""
 ```
 
 ---
