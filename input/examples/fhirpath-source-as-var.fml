@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/FhirPathSourceAsVar"
+/// name = "FhirPathSourceAsVar"
+/// status = "active"
+/// description = "Example demonstrating the where clause for filtering source elements with FHIRPath"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group FhirPathSourceAsVar(source src : Patient, target tgt : Patient) {
+  // trigger on src, and stash a constant
+  src -> ('http://example.org/') as extBase then {
+    // use the stashed constant as a variable in a where clause to filter source elements
+    src.name as sn -> tgt.name as tn then {
+      sn.family as f -> tn.family = f, tn.extension as e, e.url = (extBase & 'family'), e.value = f "r1";
+      sn.prefix as f -> tn.prefix = f, tn.extension as e, e.url = (extBase & 'prefix'), e.value = f "r1";
+    } "r2";
+  } "r3";
+}

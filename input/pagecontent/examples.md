@@ -648,3 +648,13 @@ Pushes a top-level property value down into a nested structure.
 {% fragment StructureMap/StructTopToNested fml %}
 ```
 
+<a name="tgt-fhirpath-source"></a>
+#### 55. Variables - Using FHIRPath as a source
+
+Although you can't currently use a fhirpath expression as a source directly,
+there is a workaround where you can use the target side to create a variable and populate it with a fhirpath expression, then use that
+value in a `then` dependent set of rules.
+
+```fml
+{% fragment StructureMap/FhirPathSourceAsVar fml %}
+```
