@@ -1,6 +1,4 @@
 
-### FHIR Mapping Language
-
 <p>
 The FHIR Specification includes a mapping language. The mapping language has a concrete syntax, defined
 and described in this page, and an abstract syntax, which is found in the <a href="https://hl7.org/fhir/structuremap.html">StructureMap</a>

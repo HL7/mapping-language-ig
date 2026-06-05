@@ -1,4 +1,3 @@
-### FHIR Mapping Language - Tutorial
 
 <p>
 This tutorial introduces the FHIR <a href="fml.html">mapping language</a>.

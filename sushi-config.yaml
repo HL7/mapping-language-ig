@@ -51,6 +51,8 @@ pages:
     title: FML Tutorial
   changes.md:
     title: Change Log
+  examples.md:
+    title: FML Annotated Examples
 
 menu:
   Home: index.html
@@ -59,5 +61,6 @@ menu:
   Grammar: grammar.html
   Tutorial: tutorial.html
   FHIR Artifacts:
-      Examples: artifacts.html
-      Change Log: changes.html
+    Annotated Examples: examples.html
+    Examples: artifacts.html
+    Change Log: changes.html
