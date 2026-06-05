@@ -1,16 +1,12 @@
 /// url = "http://hl7.org/fhir/uv/fml/StructureMap/SimpleBatch"
 /// name = "SimpleBatch"
 /// status = "active"
-/// description = "Example demonstrating the batch identity shorthand for copying multiple elements"
+/// description = "Example demonstrating the batch identity shorthand for copying multiple simple elements in a single rule"
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
 group SimpleBatch(source src : Patient, target tgt : Patient) {
-  // Bug: parser rejects batch identity shorthand per spec
-  // src -> tgt: id, active, gender, birthDate;
-  src.id as v -> tgt.id = v;
-  src.active as v -> tgt.active = v;
-  src.gender as v -> tgt.gender = v;
-  src.birthDate as v -> tgt.birthDate = v;
+  src -> tgt: id, active, gender;
+  src -> tgt: maritalStatus, birthDate "Others";
 }

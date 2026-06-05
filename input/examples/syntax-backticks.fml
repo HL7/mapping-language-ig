@@ -10,4 +10,5 @@ group SyntaxBackticks(source src : Basic, target tgt : Basic) {
   // backticks allow reserved words and special chars as element names
   src.`group` as v -> tgt.`group` = v;
   src.`section4.5` as v -> tgt.`section4.5` = v;
+  src.`section4.6` as v -> tgt.`section4.6` = v "nextSection";
 }

@@ -3,11 +3,9 @@
 /// status = "active"
 /// description = "Example Map to demonstrate an embedded ConceptMap"
 
-// Bug: parser rejects # prefix in conceptmap identifier per spec
-// conceptmap "#GenderMap" {
 conceptmap "GenderMap" {
   prefix s = "http://hl7.org/fhir/administrative-gender"
-  prefix t = "http://example.org/gender"
+  prefix t = "http://terminology.hl7.org/CodeSystem/v2-0001"
 
   s:male - t:M
   s:female - t:F

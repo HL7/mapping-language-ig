@@ -7,7 +7,5 @@ uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
 
 group SimpleIdentity(source src : Basic, target tgt : Basic) {
-  // Bug: identity shorthand crashes the renderer (Index 0 out of bounds)
-  // src.id -> tgt.id;
-  src.id as v -> tgt.id = v;
+  src.id -> tgt.id;
 }

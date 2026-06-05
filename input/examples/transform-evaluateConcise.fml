@@ -1,0 +1,14 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformEvaluateConcise"
+/// name = "TransformEvaluateConcise"
+/// status = "active"
+/// description = "Example demonstrating the evaluate transform to execute a FHIRPath expression"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformEvaluateConcise(source src : Patient, target tgt : Patient) {
+  // concatenate all given names using FHIRPath
+  src.name as v -> tgt.name as tn then {
+    v -> tn.text = (v.given.join(' ')) "r2";
+  } "r1";
+}

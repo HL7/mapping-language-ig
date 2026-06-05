@@ -7,8 +7,8 @@ uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
 group TransformEvaluate(source src : Patient, target tgt : Patient) {
-  // concatenate all given names using FHIRPath
   src.name as v -> tgt.name as tn then {
-    v -> tn.text = evaluate(v, 'given.join(\' \')') "r2";
+    // Replace the individual properties into text using FHIRPath
+    v -> tn.text = evaluate(v, surname + ', ' & given.join(' ')) "r2";
   } "r1";
 }

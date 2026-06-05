@@ -1,0 +1,17 @@
+/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformEvaluate2"
+/// name = "TransformEvaluate2"
+/// status = "active"
+/// description = "Additional examples demonstrating the evaluate transform to execute a FHIRPath expression"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group TransformEvaluate2(source src : Patient, target tgt : Patient) {
+  // concatenate all given names using FHIRPath
+  src.name as v -> tgt.name as tn then {
+    // Although this looks like a fhirpath expression, it is just a string
+    // and would erroneously put the literal text "v.given.join(' ')" in the `text` target element.
+    v -> tn.text = evaluate(v, 'given.join(\' \')') "r2";
+    v -> tn.family = evaluate(v, @2024-12.toString()) "dateValue";
+  } "r1";
+}
