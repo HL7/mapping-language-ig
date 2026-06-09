@@ -204,6 +204,7 @@ groupParamList
 groupParam
   : literal
   | ID
+  | fpExpression   // this is to support the `evaluate` transform, parser validation/visitor should check that this is only used there.
   ;
 
 fpExpression

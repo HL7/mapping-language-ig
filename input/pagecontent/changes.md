@@ -4,3 +4,5 @@
 ### Issues Released in initial Incubator snapshot
 **Changes since FHIR R6 ballot4:**
 These are the Jira issues that have been applied to this content since R5 was published.
+
+* [FHIR-57524](https://jira.hl7.org/browse/FHIR-57524):  FML grammar doesn't support `evaluate` fhirpath parameter
