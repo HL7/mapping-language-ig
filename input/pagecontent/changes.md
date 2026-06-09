@@ -6,3 +6,4 @@
 These are the Jira issues that have been applied to this content since R5 was published.
 
 * [FHIR-57524](https://jira.hl7.org/browse/FHIR-57524):  FML grammar doesn't support `evaluate` fhirpath parameter
+* [FHIR-54477](https://jira.hl7.org/browse/FHIR-54477):  Simple Identity transform - no FML grammar support

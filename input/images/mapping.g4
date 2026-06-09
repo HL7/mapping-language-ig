@@ -104,12 +104,17 @@ typeIdentifier
   ;
 
 mapRule
-  : qualifiedIdentifier '->' qualifiedIdentifier ruleName? ';'  #mapSimpleCopy
-  | mapTransformationRule ';'                                 #mapFhirMarkup
+  : qualifiedIdentifier '->' qualifiedIdentifier ':' identityFieldList ruleName? ';'  #mapSimpleBatchIdentity
+  | qualifiedIdentifier '->' qualifiedIdentifier ruleName? ';'                         #mapSimpleCopy
+  | mapTransformationRule ';'                                                          #mapFhirMarkup
  	;
 
 mapTransformationRule
   : ruleSources ('->' ruleTargets)? dependentExpression? ruleName?
+  ;
+
+identityFieldList
+  : identifier (',' identifier)*
   ;
 
 ruleName
