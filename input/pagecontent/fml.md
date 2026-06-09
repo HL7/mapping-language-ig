@@ -895,7 +895,7 @@ It is not necessary to explicitly invoke groups for each mapping. Instead groups
 Groups marked with <code>types</code> are used by default when the engine encounters a mapping with a source and target type where the types match the source and target type of the group. Of course, there can be only one such group for each combination of source and target type for the engine to unambiguously determine which default group to invoke.
 </p>
 <p>
-In addition to the above use, groups may be marked with <code>type+</code>. They will act like a default mapping group, just like <codes>types</codes>, but additionally they will be invoked when the target type is not fixed, i.e., when mapping to an element with a choice type. This means that a <code>type+</code> group will be used as the default as long as the source type of the instance to map matches the source type of the group. Even so, the target will then always be taken to be the target type of the group.
+In addition to the above use, groups may be marked with <code>type+</code>. They will act like a default mapping group, just like <code>types</code>, but additionally they will be invoked when the target type is not fixed, i.e., when mapping to an element with a choice type. This means that a <code>type+</code> group will be used as the default as long as the source type of the instance to map matches the source type of the group. Even so, the target will then always be taken to be the target type of the group.
 </p>
 <a name="grammar"></a>
 <h3>Formal Grammar</h3>
