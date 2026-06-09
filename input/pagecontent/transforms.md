@@ -211,7 +211,7 @@ src.subject as v -> tgt.subject = pointer(v)
 ```
 
 <a name="fn-evaluate"></a>
-### evaluate(context, expression : String) : any
+### evaluate(context, expression : Expression) : any
 
 Executes the supplied FHIRPath expression and uses the value returned by that expression. The `expression` (2nd parameter) is evaluated in the context of the first parameter (`context`), and the result is used as the value.
 
@@ -224,10 +224,14 @@ In the concrete syntax, there is a shorthand for this operation, by supplying `(
 
 For example:
 ``` fml
-src -> tgt.count = evaluate(src, 'item.count()')
-src.name as v -> tgt.display = evaluate(v, 'given.join(\' \') & \' \' & family')
+src -> tgt.count = evaluate(src, item.count())
+src.name as v -> tgt.display = evaluate(v, given.join(' ') & ' ' & family)
 src -> tgt.total = (src.item.count())    // shorthand form
 ```
+Note: When this expression is represented in the StructureMap target parameter it will be stored in a string (although it is an expression).
+The StructureMap target will have 1 parameter (the expression) for the concise form, and 2 parameters for the extended form.
+
+Any source or target variables in scope can be referred to using FHIRPaths variable format `%varName`. Although when used in these maps, the `%` prefix is optional.
 
 <a name="fn-cc"></a>
 ### cc(system : String, code : String [, display : String]) : CodeableConcept
