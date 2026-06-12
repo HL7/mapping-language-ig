@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructNestedToTop"
-/// name = "StructNestedToTop"
-/// status = "active"
-/// description = "Example demonstrating pulling a nested child element up to a top-level property"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructNestedToTop'
+/// name = 'StructNestedToTop'
+/// status = 'active'
+/// description = 'Example demonstrating pulling a nested child element up to a top-level property'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

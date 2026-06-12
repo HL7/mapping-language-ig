@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/MetadataExtended"
-/// name = "MetadataExtended"
-/// title = "Extended Metadata Example"
-/// status = "active"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/MetadataExtended'
+/// name = 'MetadataExtended'
+/// title = 'Extended Metadata Example'
+/// status = 'active'
 /// description = """
 This is a **multi-line** markdown description.
 It demonstrates the extended metadata capabilities.

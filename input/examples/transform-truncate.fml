@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformTruncate"
-/// name = "TransformTruncate"
-/// status = "active"
-/// description = "Example demonstrating the truncate transform to limit string length"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformTruncate'
+/// name = 'TransformTruncate'
+/// status = 'active'
+/// description = 'Example demonstrating the truncate transform to limit string length'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

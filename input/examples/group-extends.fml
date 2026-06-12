@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/GroupExtends"
-/// name = "GroupExtends"
-/// status = "active"
-/// description = "Example demonstrating a group that extends another group to inherit its rules"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupExtends'
+/// name = 'GroupExtends'
+/// status = 'active'
+/// description = 'Example demonstrating a group that extends another group to inherit its rules'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

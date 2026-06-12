@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformCp"
-/// name = "TransformCp"
-/// status = "active"
-/// description = "Example demonstrating the cp transform to create a ContactPoint"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformCp'
+/// name = 'TransformCp'
+/// status = 'active'
+/// description = 'Example demonstrating the cp transform to create a ContactPoint'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/GroupTypes"
-/// name = "GroupTypes"
-/// status = "active"
-/// description = "Example demonstrating the types stereotype marking a default mapping for a type pair"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupTypes'
+/// name = 'GroupTypes'
+/// status = 'active'
+/// description = 'Example demonstrating the types stereotype marking a default mapping for a type pair'
 
 uses "http://hl7.org/fhir/StructureDefinition/HumanName" as source
 uses "http://hl7.org/fhir/StructureDefinition/HumanName" as target

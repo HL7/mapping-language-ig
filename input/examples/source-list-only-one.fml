@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceListOnlyOne"
-/// name = "SourceListOnlyOne"
-/// status = "active"
-/// description = "Example demonstrating the only_one list option that errors on multiple elements"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListOnlyOne'
+/// name = 'SourceListOnlyOne'
+/// status = 'active'
+/// description = 'Example demonstrating the only_one list option that errors on multiple elements'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

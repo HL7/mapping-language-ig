@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceCopy"
-/// name = "SourceCopy"
-/// status = "active"
-/// description = "Example demonstrating a simple copy of a source element to a target element"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceCopy'
+/// name = 'SourceCopy'
+/// status = 'active'
+/// description = 'Example demonstrating a simple copy of a source element to a target element'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToProp"
-/// name = "StructArrayToProp"
-/// status = "active"
-/// description = "Example demonstrating extracting a single value from an array into a scalar property"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToProp'
+/// name = 'StructArrayToProp'
+/// status = 'active'
+/// description = 'Example demonstrating extracting a single value from an array into a scalar property'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/DependentInline"
-/// name = "DependentInline"
-/// status = "active"
-/// description = "Example demonstrating inline dependent rules in a then { } block"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/DependentInline'
+/// name = 'DependentInline'
+/// status = 'active'
+/// description = 'Example demonstrating inline dependent rules in a then { } block'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

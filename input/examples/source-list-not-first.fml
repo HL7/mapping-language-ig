@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceListNotFirst"
-/// name = "SourceListNotFirst"
-/// status = "active"
-/// description = "Example demonstrating the not_first list option to skip the first element"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListNotFirst'
+/// name = 'SourceListNotFirst'
+/// status = 'active'
+/// description = 'Example demonstrating the not_first list option to skip the first element'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

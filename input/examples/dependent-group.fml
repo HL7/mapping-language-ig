@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/DependentGroup"
-/// name = "DependentGroup"
-/// status = "active"
-/// description = "Example demonstrating invoking another group by name using then GroupName(params)"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/DependentGroup'
+/// name = 'DependentGroup'
+/// status = 'active'
+/// description = 'Example demonstrating invoking another group by name using then GroupName(params)'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

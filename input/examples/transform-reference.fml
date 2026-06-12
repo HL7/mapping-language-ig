@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformReference"
-/// name = "TransformReference"
-/// status = "active"
-/// description = "Example demonstrating the reference transform to generate a resource reference"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformReference'
+/// name = 'TransformReference'
+/// status = 'active'
+/// description = 'Example demonstrating the reference transform to generate a resource reference'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/UsesAlias"
-/// name = "UsesAlias"
-/// status = "active"
-/// description = "Example demonstrating the alias keyword for uses declarations"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/UsesAlias'
+/// name = 'UsesAlias'
+/// status = 'active'
+/// description = 'Example demonstrating the alias keyword for uses declarations'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias PatientR3 as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

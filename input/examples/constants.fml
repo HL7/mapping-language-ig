@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/Constants"
-/// name = "Constants"
-/// status = "active"
-/// description = "Example demonstrating reusable constants defined with the let keyword"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/Constants'
+/// name = 'Constants'
+/// status = 'active'
+/// description = 'Example demonstrating reusable constants defined with the let keyword'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

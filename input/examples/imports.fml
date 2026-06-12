@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/Imports"
-/// name = "Imports"
-/// status = "active"
-/// description = "Example demonstrating the imports statement with wildcard support"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/Imports'
+/// name = 'Imports'
+/// status = 'active'
+/// description = 'Example demonstrating the imports statement with wildcard support'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

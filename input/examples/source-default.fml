@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceDefault"
-/// name = "SourceDefault"
-/// status = "active"
-/// description = "Example demonstrating the default keyword for fallback values"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceDefault'
+/// name = 'SourceDefault'
+/// status = 'active'
+/// description = 'Example demonstrating the default keyword for fallback values'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

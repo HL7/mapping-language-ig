@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceListLast"
-/// name = "SourceListLast"
-/// status = "active"
-/// description = "Example demonstrating the last list option to select only the last element"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListLast'
+/// name = 'SourceListLast'
+/// status = 'active'
+/// description = 'Example demonstrating the last list option to select only the last element'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceMultiple"
-/// name = "SourceMultiple"
-/// status = "active"
-/// description = "Example demonstrating multiple source statements producing a cross-product"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceMultiple'
+/// name = 'SourceMultiple'
+/// status = 'active'
+/// description = 'Example demonstrating multiple source statements producing a cross-product'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

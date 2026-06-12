@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/ConceptMapEmbedded"
-/// name = "ConceptMapEmbedded"
-/// status = "active"
-/// description = "Example Map to demonstrate an embedded ConceptMap"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/ConceptMapEmbedded'
+/// name = 'ConceptMapEmbedded'
+/// status = 'active'
+/// description = 'Example Map to demonstrate an embedded ConceptMap'
 
 conceptmap "GenderMap" {
   prefix s = "http://hl7.org/fhir/administrative-gender"

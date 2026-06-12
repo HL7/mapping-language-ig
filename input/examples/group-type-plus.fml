@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/GroupTypePlus"
-/// name = "GroupTypePlus"
-/// status = "active"
-/// description = "Example demonstrating the type+ stereotype that also creates the target type when not fixed"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupTypePlus'
+/// name = 'GroupTypePlus'
+/// status = 'active'
+/// description = 'Example demonstrating the type+ stereotype that also creates the target type when not fixed'
 
 uses "http://hl7.org/fhir/StructureDefinition/Identifier" as source
 uses "http://hl7.org/fhir/StructureDefinition/Identifier" as target

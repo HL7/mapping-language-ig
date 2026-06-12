@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SimpleIdentity"
-/// name = "SimpleIdentity"
-/// status = "active"
-/// description = "Example demonstrating the identity transform shorthand src.element -> tgt.element"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SimpleIdentity'
+/// name = 'SimpleIdentity'
+/// status = 'active'
+/// description = 'Example demonstrating the identity transform shorthand src.element -> tgt.element'
 
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as target

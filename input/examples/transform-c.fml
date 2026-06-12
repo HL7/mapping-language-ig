@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformC"
-/// name = "TransformC"
-/// status = "active"
-/// description = "Example demonstrating the c transform to create a Coding"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformC'
+/// name = 'TransformC'
+/// status = 'active'
+/// description = 'Example demonstrating the c transform to create a Coding'
 
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as target

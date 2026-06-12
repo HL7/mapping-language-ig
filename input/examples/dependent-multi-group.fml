@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/DependentMultiGroup"
-/// name = "DependentMultiGroup"
-/// status = "active"
-/// description = "Example demonstrating invoking multiple groups in sequence separated by commas"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/DependentMultiGroup'
+/// name = 'DependentMultiGroup'
+/// status = 'active'
+/// description = 'Example demonstrating invoking multiple groups in sequence separated by commas'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

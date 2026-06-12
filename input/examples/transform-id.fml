@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformId"
-/// name = "TransformId"
-/// status = "active"
-/// description = "Example demonstrating the id transform to create an Identifier"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformId'
+/// name = 'TransformId'
+/// status = 'active'
+/// description = 'Example demonstrating the id transform to create an Identifier'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/UsesSourceTarget"
-/// name = "UsesSourceTarget"
-/// status = "active"
-/// description = "Example demonstrating basic source and target uses declarations"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/UsesSourceTarget'
+/// name = 'UsesSourceTarget'
+/// status = 'active'
+/// description = 'Example demonstrating basic source and target uses declarations'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

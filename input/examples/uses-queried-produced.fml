@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/UsesQueriedProduced"
-/// name = "UsesQueriedProduced"
-/// status = "active"
-/// description = "Example demonstrating queried and produced modes in uses declarations - Only demonstrates produced, doesn't demonstrate queried."
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/UsesQueriedProduced'
+/// name = 'UsesQueriedProduced'
+/// status = 'active'
+/// description = 'Example demonstrating queried and produced modes in uses declarations - Only demonstrates produced, doesn\'t demonstrate queried.'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target

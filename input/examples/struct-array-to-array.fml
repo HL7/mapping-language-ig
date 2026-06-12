@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToArray"
-/// name = "StructArrayToArray"
-/// status = "active"
-/// description = "Example demonstrating mapping a repeating source array to a repeating target array"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToArray'
+/// name = 'StructArrayToArray'
+/// status = 'active'
+/// description = 'Example demonstrating mapping a repeating source array to a repeating target array'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SimpleBatch"
-/// name = "SimpleBatch"
-/// status = "active"
-/// description = "Example demonstrating the batch identity shorthand for copying multiple simple elements in a single rule"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SimpleBatch'
+/// name = 'SimpleBatch'
+/// status = 'active'
+/// description = 'Example demonstrating the batch identity shorthand for copying multiple simple elements in a single rule'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

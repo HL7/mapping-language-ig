@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/Comments"
-/// name = "Comments"
-/// status = "active"
-/// description = "Example demonstrating the use of comments in FML"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/Comments'
+/// name = 'Comments'
+/// status = 'active'
+/// description = 'Example demonstrating the use of comments in FML'
 
 // comment on source structure import
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source // trailing comment 1

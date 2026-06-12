@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformEvaluateConcise"
-/// name = "TransformEvaluateConcise"
-/// status = "active"
-/// description = "Example demonstrating the evaluate transform to execute a FHIRPath expression"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformEvaluateConcise'
+/// name = 'TransformEvaluateConcise'
+/// status = 'active'
+/// description = 'Example demonstrating the evaluate transform to execute a FHIRPath expression'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

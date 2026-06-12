@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TargetSubelement"
-/// name = "TargetSubelement"
-/// status = "active"
-/// description = "Example demonstrating target sub-element access using dot notation"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TargetSubelement'
+/// name = 'TargetSubelement'
+/// status = 'active'
+/// description = 'Example demonstrating target sub-element access using dot notation'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

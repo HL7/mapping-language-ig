@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformCast"
-/// name = "TransformCast"
-/// status = "active"
-/// description = "Example demonstrating the cast transform for type conversion"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformCast'
+/// name = 'TransformCast'
+/// status = 'active'
+/// description = 'Example demonstrating the cast transform for type conversion'
 
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as target

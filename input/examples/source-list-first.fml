@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceListFirst"
-/// name = "SourceListFirst"
-/// status = "active"
-/// description = "Example demonstrating the first list option to select only the first element"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListFirst'
+/// name = 'SourceListFirst'
+/// status = 'active'
+/// description = 'Example demonstrating the first list option to select only the first element'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

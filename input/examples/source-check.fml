@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceCheck"
-/// name = "SourceCheck"
-/// status = "active"
-/// description = "Example demonstrating the check clause that raises an error on failed conditions"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceCheck'
+/// name = 'SourceCheck'
+/// status = 'active'
+/// description = 'Example demonstrating the check clause that raises an error on failed conditions'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

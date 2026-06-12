@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SourceTypeFilter"
-/// name = "SourceTypeFilter"
-/// status = "active"
-/// description = "Example demonstrating source type filtering with the : type syntax"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceTypeFilter'
+/// name = 'SourceTypeFilter'
+/// status = 'active'
+/// description = 'Example demonstrating source type filtering with the : type syntax'
 
 uses "http://hl7.org/fhir/StructureDefinition/Observation" as source
 uses "http://hl7.org/fhir/StructureDefinition/Observation" as target

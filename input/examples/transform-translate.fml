@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformTranslate"
-/// name = "TransformTranslate"
-/// status = "active"
-/// description = "Example demonstrating the translate transform using a ConceptMap for code mapping"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformTranslate'
+/// name = 'TransformTranslate'
+/// status = 'active'
+/// description = 'Example demonstrating the translate transform using a ConceptMap for code mapping'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

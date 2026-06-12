@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformCreate"
-/// name = "TransformCreate"
-/// status = "active"
-/// description = "Example demonstrating the create transform to construct a new typed instance"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformCreate'
+/// name = 'TransformCreate'
+/// status = 'active'
+/// description = 'Example demonstrating the create transform to construct a new typed instance'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Person" as target

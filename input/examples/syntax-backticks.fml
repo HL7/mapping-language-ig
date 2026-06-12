@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/SyntaxBackticks"
-/// name = "SyntaxBackticks"
-/// status = "active"
-/// description = "Example demonstrating backtick-escaped identifiers for reserved words and special characters"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SyntaxBackticks'
+/// name = 'SyntaxBackticks'
+/// status = 'active'
+/// description = 'Example demonstrating backtick-escaped identifiers for reserved words and special characters'
 
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as target

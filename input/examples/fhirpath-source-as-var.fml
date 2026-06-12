@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/FhirPathSourceAsVar"
-/// name = "FhirPathSourceAsVar"
-/// status = "active"
-/// description = "Example demonstrating the where clause for filtering source elements with FHIRPath"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/FhirPathSourceAsVar'
+/// name = 'FhirPathSourceAsVar'
+/// status = 'active'
+/// description = 'Example demonstrating the where clause for filtering source elements with FHIRPath'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

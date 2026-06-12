@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TargetListModes"
-/// name = "TargetListModes"
-/// status = "active"
-/// description = "Example demonstrating target list mode: share"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TargetListModes'
+/// name = 'TargetListModes'
+/// status = 'active'
+/// description = 'Example demonstrating target list mode: share'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

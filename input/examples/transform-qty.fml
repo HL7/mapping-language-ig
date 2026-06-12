@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/TransformQty"
-/// name = "TransformQty"
-/// status = "active"
-/// description = "Example demonstrating the qty transform to create a Quantity"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformQty'
+/// name = 'TransformQty'
+/// status = 'active'
+/// description = 'Example demonstrating the qty transform to create a Quantity'
 
 uses "http://hl7.org/fhir/StructureDefinition/Observation" as source
 uses "http://hl7.org/fhir/StructureDefinition/Observation" as target

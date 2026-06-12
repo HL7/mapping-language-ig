@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/StructPropToArray"
-/// name = "StructPropToArray"
-/// status = "active"
-/// description = "Example demonstrating mapping a scalar property into a repeating array element"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructPropToArray'
+/// name = 'StructPropToArray'
+/// status = 'active'
+/// description = 'Example demonstrating mapping a scalar property into a repeating array element'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target

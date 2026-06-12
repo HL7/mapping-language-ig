@@ -1,7 +1,7 @@
-/// url = "http://hl7.org/fhir/uv/fml/StructureMap/GroupBasic"
-/// name = "GroupBasic"
-/// status = "active"
-/// description = "Example demonstrating a basic group with typed source and target parameters"
+/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupBasic'
+/// name = 'GroupBasic'
+/// status = 'active'
+/// description = 'Example demonstrating a basic group with typed source and target parameters'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
