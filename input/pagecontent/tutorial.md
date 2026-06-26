@@ -40,7 +40,7 @@ uses "http://hl7.org/fhir/StructureDefinition/tutorial-right" as target
 
 group tutorial(source src : TLeft, target tgt : TRight) {
 
-// rules go here
+  // rules go here
 
 }
 </pre>
@@ -134,8 +134,8 @@ There are 3 different ways to express this mapping, depending on what should hap
 </p>
 <pre>
 src.a2 as a -&gt; tgt.a2 = truncate(a, 20); // just cut it off at 20 characters
-src.a2 as a where a2.length &lt;= 20 -&gt; tgt.a2 = a; // ignore it
-src.a2 as a check a2.length &lt;= 20 -&gt; tgt.a2 = a; // error if it's longer than 20 characters
+src.a2 as a where (a2.length &lt;= 20) -&gt; tgt.a2 = a; // ignore it
+src.a2 as a check (a2.length &lt;= 20) -&gt; tgt.a2 = a; // error if it's longer than 20 characters
 </pre>
 <p>
 Note that it is implicit here that the transformation engine is not required to expected to validate the
@@ -165,8 +165,8 @@ There are 3 different ways to express this mapping, depending on what should hap
 </p>
 <pre>
 src.a21 as a -&gt; tgt.a21 = cast(a, "integer"); // error if it's not an integer
-src.a21 as a where a.convertsToInteger() -&gt; tgt.a21 = cast(a, "integer"); // ignore it
-src.a21 as a where at1.convertsToInteger().not() -&gt; tgt.a21 = 0; // just assign it 0
+src.a21 as a where (a.convertsToInteger()) -&gt; tgt.a21 = cast(a, "integer"); // ignore it
+src.a21 as a where (at1.convertsToInteger().not()) -&gt; tgt.a21 = 0; // just assign it 0
 </pre>
 <p>
 More than one of these mapping rules may be present to handle all possible cases - e.g., rule_a21b combined with rule_a21c.
@@ -340,8 +340,8 @@ value of another element.
 This is managed using <a href="https://hl7.org/fhir/fhirpath.html">FHIRPath</a> conditions on the mapping statements:
 </p>
 <pre>
-src.i as i where m &lt; 2 -&gt; tgt.j = i;
-src.i as i where m >= 2 -&gt; tgt.k = i;
+src.i as i where (m &lt; 2) -&gt; tgt.j = i;
+src.i as i where (m >= 2) -&gt; tgt.k = i;
 </pre>
 
 <a name="step10"></a>
@@ -435,7 +435,7 @@ This leads to some more complex mapping statements:
 </p>
 <pre>
 src.e as s_e -&gt; tgt.e as t_e then {
-  for s_e -&gt; t_e.f = s_e, t_e.g = 'g1';
+  s_e -&gt; t_e.f = s_e, t_e.g = 'g1';
 };
 
 src.f as s_f -&gt; tgt.e as t_e first then {
