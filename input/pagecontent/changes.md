@@ -1,5 +1,5 @@
 **Content moved to the Incubator:**
-* [FHIR-54473](https://jira.hl7.org/browse/FHIR-54473):  Move FML to incubator
+* [FHIR-54473](https://jira.hl7.org/browse/FHIR-54473):  Move FML to incubator (including StructureMap resource)
 
 ### Issues Released in initial Incubator snapshot
 **Changes since FHIR R6 ballot4:**
