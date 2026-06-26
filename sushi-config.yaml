@@ -13,7 +13,7 @@ contact:
         value: http://www.hl7.org/Special/committees/fiwg
 description: The FHIR Mapping Language (FML) specification is a Domain Specific Language (DSL) for describing how to transform data from one structure to another. It is designed to be used in the context of FHIR, but can be applied to any data transformation use case.
 license: CC0-1.0
-fhirVersion: 5.0.0
+fhirVersion: 6.0.0-ballot3
 instanceOptions:
   manualSliceOrdering: true
 parameters:
@@ -24,6 +24,11 @@ parameters:
   shownav: false
   path-pages:
     - input/pagecontent
+    - input/resources/structuremap
+  path-resource:
+    - input/resources/structuremap
+  additional-resource: 
+    - input/resources/structuremap/StructureDefinition-StructureMap.xml
 
 copyrightYear: 2022+
 releaseLabel: STU 1
@@ -62,5 +67,5 @@ menu:
   Tutorial: tutorial.html
   FHIR Artifacts:
     Annotated Examples: examples.html
-    Examples: artifacts.html
+    Artifacts: artifacts.html
     Change Log: changes.html

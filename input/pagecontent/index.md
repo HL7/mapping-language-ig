@@ -10,6 +10,8 @@ We welcome and encourage all feedback on this content.
 * [Specification](fml.html)
 * [Tutorial](tutorial.html)
 * [Examples](artifacts.html)
+* [StructureMap](StructureDefinition-StructureMap.html)
+* [$transform operation](OperationDefinition-StructureMap-transform.html)
 
 ### Cross Version Analysis
 {% lang-fragment cross-version-analysis.xhtml %}
