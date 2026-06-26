@@ -44,7 +44,7 @@ A map has 7 parts:
   
 
 <a name="execution"></a>
-<h3>Executing Maps</h3>
+### Executing Maps
 
 <p>
 Maps are executed by a mapping engine. This takes one or more inputs of instances (directed acyclic graphs) and a map, and produces a set of outputs as specified by the map.
@@ -79,7 +79,7 @@ order to manage the map execution process.
 
 
 <a name="syntax"></a>
-<h3>General Syntax Notes</h3>
+### General Syntax Notes
 <p>
 Mapping files are always plain text in Unicode. Whitespace is any Unicode whitespace, and the particular whitespace used
 is not significant, except that Unicode end of line characters terminate a
@@ -108,8 +108,9 @@ The media type for the FHIR Mapping language is <code>text/fhir-mapping</code>.
 Note that in order to conform to <a href="https://tools.ietf.org/html/rfc6657#page-3">RFC 6657</a>, 
 the <code>charset=utf-8</code> parameter SHALL be appended.
 </p>
+
 <a name="metadata"></a>
-<h3>Metadata</h3>
+### Metadata
 
 <p>
 The first part of a mapping file defines the metadata about the map
@@ -149,7 +150,7 @@ If no value is provided for <code>status</code>, then the status "draft" is assu
 </p>
 
 <a name="typing"></a>
-<h3>Structure Definition References</h3>
+### Structure Definition References
 
 <p>
 The next optional section of the map references the set of structure definitions
@@ -197,7 +198,7 @@ and such maps typically require special development to integrate the execution o
 </p>
 
 <a name="imports"></a>
-<h3>Map Imports</h3>
+### Map Imports
 <p>
 This next optional section references additional maps that are used by this map. For example:
 </p>
@@ -215,7 +216,7 @@ The url in the import statement may contain a "*" as a wildcard character (as sh
 
 
 <a name="constants"></a>
-<h3>Constants</h3>
+### Constants
 <p>
 The map may define any number of constant values that may be re-used through out the rules that follow.
 Each constant has the following grammar:
@@ -246,7 +247,7 @@ can parse the syntax). Some rules that apply to the constant declarations:
 </ul>
 
 <a name="groups"></a>
-<h3>Groups</h3>
+### Groups
 <p>
 Each map contains one or more groups, each optionally containing one or more mapping rules. Each group declares a set of input and output variables that are shared by the rules. The in- and output variables define exactly which instances are passed to the mapping, and provides names by which they may be passed when invoking the map:
 </p>
@@ -296,7 +297,7 @@ Default mapping groups SHALL have two parameters, a source, and a target, in tha
 </p>
     
 <a name="rules"></a>
-<h3>Transform Rules</h3>
+### Transform Rules
 
 <p>
 The main portion of a map consists of a set of transform rules that describe
@@ -847,7 +848,7 @@ of these maps.
 </p>
 
 <a name="simple"></a>
-<h3>Simple Form: Identity transform</h3>
+### Simple Form: Identity transform
 <p>
 If no dependent rules are specified, and if the is only one source and target, and
 they both specify a variable, the rule can be written in an abbreviated form:
@@ -888,7 +889,7 @@ parts of the transform that involve change, which is attractive in version to ve
 changes where there is changes on only a few elements.
 </p>
 
-<h3>Default mapping groups</h3>
+### Default mapping groups
 <p>
 It is not necessary to explicitly invoke groups for each mapping. Instead groups can be declared to be the "default" mapping for a given source and target type. Groups acting as defaults have either &lt;&lt;types&gt;&gt; or &lt;&lt;type+&gt;&gt; in their declaration.</p>
 <p>
@@ -898,17 +899,17 @@ Groups marked with <code>types</code> are used by default when the engine encoun
 In addition to the above use, groups may be marked with <code>type+</code>. They will act like a default mapping group, just like <code>types</code>, but additionally they will be invoked when the target type is not fixed, i.e., when mapping to an element with a choice type. This means that a <code>type+</code> group will be used as the default as long as the source type of the instance to map matches the source type of the group. Even so, the target will then always be taken to be the target type of the group.
 </p>
 <a name="grammar"></a>
-<h3>Formal Grammar</h3>
+### Formal Grammar
 <p>The formal grammar for the mapping language, specified using ANTLR, can be found <a href="mapping.g4">here</a>.</p>
 <p>Note that this grammar uses FHIRPath as an embedded syntax. Full details on FHIRPath and its grammar can be found <a href="http://hl7.org/fhirpath">here</a>.</p>
 
 <a name="api"></a>
-<h3>Mapping Support API</h3>
+### Mapping Support API
 
 <p>todo</p>
 
 <a name="reserved"></a>
-<h3>Reserved keywords</h3>
+### Reserved keywords
 <p>This is the list of reserved keywords, which cannot be used as 
 identifiers and names for variables, unless escaped.</p>
 
