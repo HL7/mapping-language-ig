@@ -164,8 +164,8 @@ Now for the case where there is a simple type conversion between the primitive t
 There are 3 different ways to express this mapping, depending on what should happen when a is not an integer:
 </p>
 <pre>
-src.a21 as a -&gt; tgt.a21 = cast(a, "integer"); // error if it's not an integer
-src.a21 as a where (a.convertsToInteger()) -&gt; tgt.a21 = cast(a, "integer"); // ignore it
+src.a21 as a -&gt; tgt.a21 = cast(a, 'integer'); // error if it's not an integer
+src.a21 as a where (a.convertsToInteger()) -&gt; tgt.a21 = cast(a, 'integer'); // ignore it
 src.a21 as a where (at1.convertsToInteger().not()) -&gt; tgt.a21 = 0; // just assign it 0
 </pre>
 <p>
@@ -522,7 +522,7 @@ For our first example, we're going to look at creating multiple output structure
 The key to setting this mapping up is to create a variable context for src.az1, and then carry it down, performing the actual mappings at the next level down:
 </p>
 <pre>
-src.f1 as s_f1 -&gt; create("TRight2") as rr, tgt.ptr = reference(rr) then {
+src.f1 as s_f1 -&gt; create('TRight2') as rr, tgt.ptr = reference(rr) then {
   s_f1 -&gt; rr.f2 = srcff;
 };
 </pre>
@@ -564,7 +564,7 @@ identified by src.ptr, and create a variable for it
 </p>
 <pre>
   src.ptr as t then {
-    t.f2 -> tgt.f2
+    t.f2 -> tgt.f2;
   }
 </pre>
 

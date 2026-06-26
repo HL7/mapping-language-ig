@@ -10,3 +10,4 @@ These are the Jira issues that have been applied to this content since R5 was pu
 
 ### Pre-applied:
 * [FHIR-54919](https://jira.hl7.org/browse/FHIR-54919): fml mapping tutorial has invalid fhirpath that doesn't have the surrounding brackets and several other syntax issues.
+* [FHIR-55380](https://jira.hl7.org/browse/FHIR-55380): Tutorial has many technical errors
