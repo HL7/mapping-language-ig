@@ -773,9 +773,9 @@
 		</element>
 		<element id="StructureMap.group.rule.source.defaultValue">
 			<path value="StructureMap.group.rule.source.defaultValue"/>
-			<short value="Default value if no value exists"/>
-			<definition value="A value to use if there is no existing value in the source object."/>
-			<comment value="If there's a default value on an item that can repeat, it will only be used once."/>
+			<short value="Default value FHIRPath expression"/>
+			<definition value="A FHIRPath expression that returns value(s) to use if the source object has no value."/>
+			<comment value="The expression is only evaluated once if the source object has no value, otherwise is not evaluated at all."/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
