@@ -788,10 +788,11 @@
 			<short value="Optional field for this source"/>
 			<definition value="Optional field for this source."/>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="*"/>
 			<type>
 				<code value="string"/>
 			</type>
+			<orderMeaning value="Element names walk down the heirarchy, stepping into child elements"/>
 			<isSummary value="true"/>
 		</element>
 		<element id="StructureMap.group.rule.source.listMode">
@@ -895,10 +896,11 @@
 			<short value="Field to create in the context"/>
 			<definition value="Field to create in the context."/>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="*"/>
 			<type>
 				<code value="string"/>
 			</type>
+			<orderMeaning value="Element names walk down the heirarchy, stepping into child elements"/>
 			<condition value="smp-1"/>
 			<isSummary value="true"/>
 		</element>
