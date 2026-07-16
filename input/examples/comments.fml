@@ -18,4 +18,5 @@ group CommentsDemo(source src : Patient, target tgt : Patient) {
     // before R3 comment
     v.family -> tn.family "R3"; // after R3 comment
   } "R4";
+  // and a trailing comment after all rules (before close of group)
 }
