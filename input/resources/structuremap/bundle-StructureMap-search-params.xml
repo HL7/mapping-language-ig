@@ -13,6 +13,7 @@
           <valueString value="{{name}}.useContext.valueCodeableConcept"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-context"/>
+      	<status value="active"/>
         <description value="A use context assigned to the structure map"/>
         <code value="context"/>
         <type value="token"/>
@@ -32,6 +33,7 @@
           <valueString value="{{name}}.useContext.valueQuantity,{{name}}.useContext.valueRange"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-context-quantity"/>
+      	<status value="active"/>
         <description value="A quantity- or range-valued use context assigned to the structure map"/>
         <code value="context-quantity"/>
         <type value="quantity"/>
@@ -51,6 +53,7 @@
           <valueString value="{{name}}.useContext.code"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-context-type"/>
+      	<status value="active"/>
         <description value="A type of use context assigned to the structure map"/>
         <code value="context-type"/>
         <type value="token"/>
@@ -67,6 +70,7 @@
           <valueCode value="trial-use"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-context-type-quantity"/>
+      	<status value="active"/>
         <description value="A use context type and quantity- or range-based value assigned to the structure map"/>
         <code value="context-type-quantity"/>
         <type value="composite"/>
@@ -91,6 +95,7 @@
           <valueCode value="trial-use"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-context-type-value"/>
+      	<status value="active"/>
         <description value="A use context type and value assigned to the structure map"/>
         <code value="context-type-value"/>
         <type value="composite"/>
@@ -118,6 +123,7 @@
           <valueString value="{{name}}.date"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-date"/>
+      	<status value="active"/>
         <description value="The structure map publication date"/>
         <code value="date"/>
         <type value="date"/>
@@ -137,6 +143,7 @@
           <valueString value="{{name}}.description"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-description"/>
+      	<status value="active"/>
         <description value="The description of the structure map"/>
         <code value="description"/>
         <type value="string"/>
@@ -156,6 +163,7 @@
           <valueString value="{{name}}.identifier"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-identifier"/>
+      	<status value="active"/>
         <description value="External identifier for the structure map"/>
         <code value="identifier"/>
         <type value="token"/>
@@ -175,6 +183,7 @@
           <valueString value="{{name}}.jurisdiction"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-jurisdiction"/>
+      	<status value="active"/>
         <description value="Jurisdiction of the authority that maintains the the structure map"/>
         <code value="jurisdiction"/>
         <type value="token"/>
@@ -194,6 +203,7 @@
           <valueString value="{{name}}.name"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-name"/>
+      	<status value="active"/>
         <description value="Computationally friendly name of the structure map"/>
         <code value="name"/>
         <type value="string"/>
@@ -213,6 +223,7 @@
           <valueString value="{{name}}.publisher"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-publisher"/>
+      	<status value="active"/>
         <description value="Name of the publisher of the structure map"/>
         <code value="publisher"/>
         <type value="string"/>
@@ -232,6 +243,7 @@
           <valueString value="{{name}}.status"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-status"/>
+      	<status value="active"/>
         <description value="The current status of the structure map"/>
         <code value="status"/>
         <type value="token"/>
@@ -251,6 +263,7 @@
           <valueString value="{{name}}.title"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-title"/>
+      	<status value="active"/>
         <description value="The human-friendly name of the structure map"/>
         <code value="title"/>
         <type value="string"/>
@@ -270,6 +283,7 @@
           <valueString value="{{name}}.url"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-url"/>
+      	<status value="active"/>
         <description value="The uri that identifies the structure map"/>
         <code value="url"/>
         <type value="uri"/>
@@ -289,6 +303,7 @@
           <valueString value="{{name}}.version"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-version"/>
+      	<status value="active"/>
         <description value="The business version of the structure map"/>
         <code value="version"/>
         <type value="token"/>
@@ -305,6 +320,7 @@
           <valueCode value="trial-use"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-source"/>
+      	<status value="active"/>
         <description value="A source StructureDefinition for the map"/>
         <code value="source"/>
         <type value="uri"/>
@@ -321,6 +337,7 @@
           <valueCode value="trial-use"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-target"/>
+      	<status value="active"/>
         <description value="A target StructureDefinition for the map"/>
         <code value="target"/>
         <type value="uri"/>
@@ -337,6 +354,7 @@
           <valueCode value="trial-use"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-queried"/>
+      	<status value="active"/>
         <description value="A queried StructureDefinition for the map"/>
         <code value="queried"/>
         <type value="uri"/>
@@ -353,6 +371,7 @@
           <valueCode value="trial-use"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-produced"/>
+      	<status value="active"/>
         <description value="A produced StructureDefinition for the map"/>
         <code value="produced"/>
         <type value="uri"/>
@@ -370,6 +389,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
+        <url value="http://hl7.org/fhir/build/SearchParameter/StructureMap-experimental"/>
+      	<status value="active"/>
         <description value="Whether the StructureMap is experimental"/>
         <code value="experimental"/>
         <type value="token"/>
