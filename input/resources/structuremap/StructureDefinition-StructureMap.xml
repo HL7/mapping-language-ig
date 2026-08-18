@@ -33,7 +33,7 @@
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:2.16.840.1.113883.4.642.5.1100"/>
 	</identifier>
-	<version value="6.0.0"/>
+	<version value="0.1.0"/>
 	<name value="StructureMap"/>
 	<title value="Structure Map"/>
 	<status value="active"/>
@@ -95,7 +95,6 @@
 				<severity value="warning"/>
 				<human value="Name should be usable as an identifier for the module by machine processing applications such as code generation"/>
 				<expression value="name.exists() implies name.matches('^[A-Z]([A-Za-z0-9_]){1,254}$')"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/StructureMap"/>
 			</constraint>
 			<mapping>
 				<identity value="rim"/>
@@ -504,7 +503,7 @@
 			<max value="*"/>
 			<type>
 				<code value="canonical"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureMap"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureMap|0.1.0"/>
 			</type>
 			<isSummary value="true"/>
 		</element>
@@ -724,7 +723,6 @@
         <severity value="error"/> 
         <human value="Min &lt;= Max"/> 
         <expression value="min.empty() or max.empty() or (max = '*') or iif(max != '*', min &lt;= max.toInteger())"/> 
-        <source value="http://hl7.org/fhir/StructureDefinition/StructureMap"/> 
       </constraint> 
 		</element>
 		<element id="StructureMap.group.rule.source.context">
@@ -764,7 +762,6 @@
         <severity value="error"/> 
         <human value="Max SHALL be a number or &quot;*&quot;"/> 
         <expression value="empty() or ($this = '*') or (toInteger() &gt;= 0)"/> 
-        <source value="http://hl7.org/fhir/StructureDefinition/StructureMap"/> 
       </constraint> 
 		</element>
 		<element id="StructureMap.group.rule.source.type">
@@ -882,7 +879,6 @@
 				<severity value="error"/>
 				<human value="Can only have an element if you have a context"/>
 				<expression value="element.exists() implies context.exists()"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/StructureMap"/>
 			</constraint>
 			<isSummary value="true"/>
 		</element>

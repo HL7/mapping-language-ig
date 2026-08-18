@@ -48,6 +48,7 @@
         <valueString value="FHIRPath Equivalent"/>
       </extension>
     </code>
+    <uri value="http://hl7.org/fhir/uv/fml/CodeSystem/map-transform#fhirpath"/>
     <description value="FHIRPath equivalent for transform function"/>
     <type value="string"/>
   </property>
