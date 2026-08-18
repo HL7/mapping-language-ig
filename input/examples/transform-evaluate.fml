@@ -9,6 +9,6 @@ uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 group TransformEvaluate(source src : Patient, target tgt : Patient) {
   src.name as v -> tgt.name as tn then {
     // Replace the individual properties into text using FHIRPath
-    v -> tn.text = evaluate(v, surname + ', ' & given.join(' ')) "r2";
+    v -> tn.text = evaluate(v, family + ', ' & given.join(' ')) "r2";
   } "r1";
 }
