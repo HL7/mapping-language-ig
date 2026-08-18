@@ -5,7 +5,7 @@
 <h3>Scope and Usage</h3>
 <p>
 The <i>StructureMap</i> resource defines a detailed set of rules that describe 
-how one <a href="structuredefinition.html">Structure</a> is related to another
+how one <a href="https://hl7.org/fhir/structuredefinition.html">Structure</a> is related to another
 and provides sufficient detail to allow for automated conversion of instances. 
 </p>
 <p>
@@ -38,7 +38,7 @@ Note that many mappings between models only establish conceptual equivalence
 between the structures. These models are useful because they quickly convey 
 how the structures are related to humans, whereas more maps with sufficient
 detail to support instance transformation are necessarily full of fine detail
-that can obscure the conceptual relationships. The <a href="conceptmap.html">ConceptMap</a>
+that can obscure the conceptual relationships. The <a href="https://hl7.org/fhir/conceptmap.html">ConceptMap</a>
 resource is suitable for representing high level relationships between 
 models, while this <i>StructureMap</i> resource is intended to describe the 
 full details that need to be known in order to transform an instance of 
@@ -46,7 +46,7 @@ data from one structure to another.
 </p>
 <p>
 The <i>StructureMap</i> resource assumes that both the source and the
-target models are fully defined using <a href="structuredefinition.html">StructureDefinition</a> 
+target models are fully defined using <a href="https://hl7.org/fhir/structuredefinition.html">StructureDefinition</a> 
 resources - either resources, or logical models, and is described accordingly. 
 However, there is no direct relationship between the mapping language contained 
 in the StructureMap resource, and the existence of the appropriate structure 
@@ -61,7 +61,7 @@ parts of the mapping language cannot be used in these cases.
 </p>
 <p>
 The Mapping Language and the <code>StructureMap</code> resource are built 
-on top of <a href="fhirpath.html">FHIRPath</a>, and a FHIRPath implementation is required in order to 
+on top of <a href="https://hl7.org/fhir/fhirpath.html">FHIRPath</a>, and a FHIRPath implementation is required in order to 
 execute a StructureMap.
 </p>
 </div>
