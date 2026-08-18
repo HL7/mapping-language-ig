@@ -2,6 +2,7 @@
 
 
 # Other warning/info messages
+INFORMATION: fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
 INFORMATION: en/fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
 
 # These code systems are bound to code elements with a required binding
@@ -13,14 +14,10 @@ INFORMATION: CodeSystem/map-target-list-mode: CodeSystem: Most code systems defi
 INFORMATION: CodeSystem/map-transform: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 # the fhirpath primitive types are commonly used in FML (not really an experimental codesystem)
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[1].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[27].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[36].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[42].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[50].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[58].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[63].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[78].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[88].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[95].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
-INFORMATION: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[100].type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
+%.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
+
+# license codesystem referenced by the IG Publisher
+INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
+
+# All these are copies using the simple identity approach - no variable name is needed
+%: The source statement doesn't assign a variable to the source - check that this is what is intended
