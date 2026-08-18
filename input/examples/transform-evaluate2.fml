@@ -10,7 +10,7 @@ group TransformEvaluate2(source src : Patient, target tgt : Patient) {
   // concatenate all given names using FHIRPath
   src.name as v -> tgt.name as tn then {
     // Although this looks like a fhirpath expression, it is just a string
-    // and would erroneously put the literal text "v.given.join(' ')" in the `text` target element.
+    // and will put the literal text "v.given.join(' ')" in the `text` target element.
     v -> tn.text = evaluate(v, 'given.join(\' \')') "r2";
     v -> tn.period.start = evaluate(v, @2024-12-01T09:00:00) "dateValue";
   } "r1";

@@ -9,5 +9,7 @@ uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 group TransformAppend(source src : Patient, target tgt : Patient) {
   src.name as v -> tgt.name as tn then {
     v.family as f, v.text as t -> tn.text = append(f, ' ', t) "r1";
+    v.family as f, v.text as t -> tn.text = append(f, ' - ', t) "r2";
+    v.family as f, v.text as t -> tn.text = append(f, '\u0020', t) "r3";
   } "r2";
 }
