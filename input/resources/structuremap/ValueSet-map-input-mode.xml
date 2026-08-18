@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
-  <url value="http://hl7.org/fhir/ValueSet/map-input-mode"/>
+  <url value="http://hl7.org/fhir/uv/fml/ValueSet/vs-map-input-mode"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.3.677"/>
@@ -42,7 +42,7 @@
   <immutable value="true"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/map-input-mode"/>
+      <system value="http://hl7.org/fhir/uv/fml/CodeSystem/map-input-mode"/>
     </include>
   </compose>
 </ValueSet>
