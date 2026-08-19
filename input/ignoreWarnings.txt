@@ -21,3 +21,7 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.license: R
 
 # All these are copies using the simple identity approach - no variable name is needed
 %: The source statement doesn't assign a variable to the source - check that this is what is intended
+
+# Core resources shouldn't be deciding if a search parameter specifically supports multiples or not
+% Constraint failed: spd-6: 'Values for multipleOr and multipleAnd should be provided for clarity (multipleOr.exists() and multipleAnd.exists())' (defined in http://hl7.org/fhir/StructureDefinition/SearchParameter)
+

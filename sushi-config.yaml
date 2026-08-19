@@ -22,6 +22,28 @@ parameters:
   globals-in-artifacts: true
   show-inherited-invariants: false
   shownav: false
+  special-url:
+    - http://hl7.org/fhir/StructureDefinition/StructureMap
+    - http://hl7.org/fhir/SearchParameter/StructureMap-context
+    - http://hl7.org/fhir/SearchParameter/StructureMap-context-quantity
+    - http://hl7.org/fhir/SearchParameter/StructureMap-context-type
+    - http://hl7.org/fhir/SearchParameter/StructureMap-context-type-quantity
+    - http://hl7.org/fhir/SearchParameter/StructureMap-context-type-value
+    - http://hl7.org/fhir/SearchParameter/StructureMap-date
+    - http://hl7.org/fhir/SearchParameter/StructureMap-description
+    - http://hl7.org/fhir/SearchParameter/StructureMap-identifier
+    - http://hl7.org/fhir/SearchParameter/StructureMap-jurisdiction
+    - http://hl7.org/fhir/SearchParameter/StructureMap-name
+    - http://hl7.org/fhir/SearchParameter/StructureMap-publisher
+    - http://hl7.org/fhir/SearchParameter/StructureMap-status
+    - http://hl7.org/fhir/SearchParameter/StructureMap-title
+    - http://hl7.org/fhir/SearchParameter/StructureMap-url
+    - http://hl7.org/fhir/SearchParameter/StructureMap-version
+    - http://hl7.org/fhir/SearchParameter/StructureMap-source
+    - http://hl7.org/fhir/SearchParameter/StructureMap-target
+    - http://hl7.org/fhir/SearchParameter/StructureMap-queried
+    - http://hl7.org/fhir/SearchParameter/StructureMap-produced
+    - http://hl7.org/fhir/SearchParameter/StructureMap-experimental
   path-pages:
     - input/pagecontent
     - input/resources/structuremap
