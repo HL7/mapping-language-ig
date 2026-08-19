@@ -20,7 +20,7 @@
     <mode value="target"/>
   </structure>
   <group>
-    <name value="main"/>
+    <name value="Main"/>
     <input>
       <name value="source"/>
       <type value="ActivityDefinition"/>

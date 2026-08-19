@@ -3,7 +3,6 @@
 
 # Other warning/info messages
 INFORMATION: fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
-INFORMATION: en/fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
 
 # These code systems are bound to code elements with a required binding
 INFORMATION: CodeSystem/map-group-type-mode: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
@@ -22,6 +21,12 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.license: R
 # All these are copies using the simple identity approach - no variable name is needed
 %: The source statement doesn't assign a variable to the source - check that this is what is intended
 
+# The FML narrative text is rendering self links which appear to be external and non-versioned so report the issue
+%is a canonical link and is therefore unsafe with regard to versions
+
 # Core resources shouldn't be deciding if a search parameter specifically supports multiples or not
 % Constraint failed: spd-6: 'Values for multipleOr and multipleAnd should be provided for clarity (multipleOr.exists() and multipleAnd.exists())' (defined in http://hl7.org/fhir/StructureDefinition/SearchParameter)
 
+
+# IG Publisher/Validator issue with FML examples converting to additional resources https://chat.fhir.org/#narrow/channel/179165-committers/topic/Additional.20Resources.20examples.20issue/with/617128491
+%This resource is an additional resource, so must have a resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/StructureMap|0.1.0'
