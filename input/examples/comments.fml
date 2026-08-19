@@ -1,4 +1,5 @@
 /// url = 'http://hl7.org/fhir/uv/fml/StructureMap/Comments'
+/// version = '0.1.0'
 /// name = 'Comments'
 /// status = 'active'
 /// description = 'Example demonstrating the use of comments in FML'

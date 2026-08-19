@@ -1,4 +1,5 @@
 /// url = 'http://hl7.org/fhir/uv/fml/StructureMap/MetadataExtended'
+/// version = '0.1.0'
 /// name = 'MetadataExtended'
 /// title = 'Extended Metadata Example'
 /// status = 'active'
