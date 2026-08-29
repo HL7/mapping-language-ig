@@ -3,9 +3,9 @@
 /// status = 'active'
 /// description = 'Example demonstrating the identity transform shorthand src.element -> tgt.element'
 
-uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
-uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
-group SimpleIdentity(source src : Basic, target tgt : Basic) {
+group SimpleIdentity(source src : Patient, target tgt : Patient) {
   src.id -> tgt.id;
 }

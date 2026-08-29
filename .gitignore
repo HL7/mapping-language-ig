@@ -18,3 +18,7 @@ _gencontinuous.sh
 _genonce.bat
 _genonce.sh
 _build.bat
+
+# Template files
+template-fml/**/.index.json
+template-fml/**/.index.db

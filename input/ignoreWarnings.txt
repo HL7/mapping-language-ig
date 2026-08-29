@@ -30,3 +30,16 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.license: R
 
 # IG Publisher/Validator issue with FML examples converting to additional resources https://chat.fhir.org/#narrow/channel/179165-committers/topic/Additional.20Resources.20examples.20issue/with/617128491
 %This resource is an additional resource, so must have a resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/StructureMap|0.1.0'
+
+# Handling whitespace is not uncommon in maps when performing formatting
+%Primitive types should not only be whitespace
+%value should not start or finish with whitespace ' - '
+
+# This is a test of using backticks to delimit identifiers that contain values not otherwise able to be used as identifier (which can occur in logical models representing non fhir data structures)
+%id value 'group!' is not valid
+
+# Bug in the Validator (PR incoming) - 
+%Transform evaluate takes 1 parameter(s) but 2 were found
+
+# StructureMap doesn't have a way to reference the embedded conceptmap, so this issue is unresolved. FHIR-58741
+ERROR: StructureMap/ConceptMapEmbedded: StructureMap.contained[0]: The contained resource 'GenderMap' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)

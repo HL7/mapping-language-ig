@@ -1,0 +1,13 @@
+{
+    "name": "hl7.fml.template",
+    "version": "0.0.1",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "HL7 FHIR Mapping Language Template - for use with the HL7 FHIR Mapping Language IG",
+    "author": "http://hl7.org/fhir",
+    "canonical": "http://github.com/HL7/ig-template-fml",
+    "base": "hl7.fhir.template",
+    "dependencies": {
+      "hl7.fhir.template": "1.0.0"
+    }
+  }

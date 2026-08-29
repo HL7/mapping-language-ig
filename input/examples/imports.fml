@@ -6,8 +6,8 @@
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
-imports "http://hl7.org/fhir/uv/fml/StructureMap/Helper*"
+imports "http://hl7.org/fhir/uv/fml/StructureMap/Simple*"
 
 group Imports(source src : Patient, target tgt : Patient) {
-  src.id as v -> tgt.id = v;
+  src.gender as v -> tgt.gender = v then SimpleIdentity(src, tgt) "testRule";
 }
