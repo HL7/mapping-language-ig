@@ -25,7 +25,6 @@ parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.89
   path-pages:
     - input/pagecontent
-    - input/resources/structuremap
   path-resource:
     - input/resources/structuremap
   additional-resource: 
