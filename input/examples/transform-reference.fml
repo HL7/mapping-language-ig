@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformReference'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformReference'
 /// name = 'TransformReference'
 /// status = 'active'
 /// description = 'Example demonstrating the reference transform to generate a resource reference'

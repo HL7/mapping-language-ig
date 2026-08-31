@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/UsesSourceTarget'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/UsesSourceTarget'
 /// name = 'UsesSourceTarget'
 /// status = 'active'
 /// description = 'Example demonstrating basic source and target uses declarations'

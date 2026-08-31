@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/MetadataBasic'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/MetadataBasic'
 /// name = 'MetadataBasic'
 /// status = 'active'
 /// description = 'Example demonstrating required metadata: url, name, and status'

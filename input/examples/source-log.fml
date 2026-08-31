@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceLog'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceLog'
 /// name = 'SourceLog'
 /// status = 'active'
 /// description = 'Example demonstrating the log statement for writing to the application log'

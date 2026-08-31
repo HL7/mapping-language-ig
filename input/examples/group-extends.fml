@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupExtends'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/GroupExtends'
 /// name = 'GroupExtends'
 /// status = 'active'
 /// description = 'Example demonstrating a group that extends another group to inherit its rules'

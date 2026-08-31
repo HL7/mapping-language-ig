@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/fml/CodeSystem/map-target-list-mode"/>
+  <url value="http://hl7.org/fhir/uv/mapping-language/CodeSystem/map-target-list-mode"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.4.686"/>
@@ -40,7 +40,7 @@
   </contact>
   <description value="If field is a list, how to manage the production."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/uv/fml/ValueSet/vs-map-target-list-mode"/>
+  <valueSet value="http://hl7.org/fhir/uv/mapping-language/ValueSet/vs-map-target-list-mode"/>
   <content value="complete"/>
   <concept>
     <code value="first"/>

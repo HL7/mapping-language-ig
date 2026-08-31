@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SimpleBatch'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SimpleBatch'
 /// name = 'SimpleBatch'
 /// status = 'active'
 /// description = 'Example demonstrating the batch identity shorthand for copying multiple simple elements in a single rule'

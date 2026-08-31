@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformQty'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformQty'
 /// name = 'TransformQty'
 /// status = 'active'
 /// description = 'Example demonstrating the qty transform to create a Quantity'

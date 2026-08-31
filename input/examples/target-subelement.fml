@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TargetSubelement'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TargetSubelement'
 /// name = 'TargetSubelement'
 /// status = 'active'
 /// description = 'Example demonstrating target sub-element access using dot notation'

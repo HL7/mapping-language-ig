@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TargetListModes'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TargetListModes'
 /// name = 'TargetListModes'
 /// status = 'active'
 /// description = 'Example demonstrating target list mode: share'

@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/ConceptMapEmbedded'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/ConceptMapEmbedded'
 /// name = 'ConceptMapEmbedded'
 /// status = 'active'
 /// description = 'Example Map to demonstrate an embedded ConceptMap'

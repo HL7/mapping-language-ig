@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructPropToArray'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/StructPropToArray'
 /// name = 'StructPropToArray'
 /// status = 'active'
 /// description = 'Example demonstrating mapping a scalar property into a repeating array element'

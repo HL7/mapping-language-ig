@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListLast'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceListLast'
 /// name = 'SourceListLast'
 /// status = 'active'
 /// description = 'Example demonstrating the last list option to select only the last element'

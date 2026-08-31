@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformTranslate'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformTranslate'
 /// name = 'TransformTranslate'
 /// status = 'active'
 /// description = 'Example demonstrating the translate transform using a ConceptMap for code mapping'

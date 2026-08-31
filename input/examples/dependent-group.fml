@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/DependentGroup'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/DependentGroup'
 /// name = 'DependentGroup'
 /// status = 'active'
 /// description = 'Example demonstrating invoking another group by name using then GroupName(params)'

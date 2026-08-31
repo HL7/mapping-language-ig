@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceCopy'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceCopy'
 /// name = 'SourceCopy'
 /// status = 'active'
 /// description = 'Example demonstrating a simple copy of a source element to a target element'

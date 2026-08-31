@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToArray'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/StructArrayToArray'
 /// name = 'StructArrayToArray'
 /// status = 'active'
 /// description = 'Example demonstrating mapping a repeating source array to a repeating target array'

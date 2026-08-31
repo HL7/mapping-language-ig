@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/DependentInline'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/DependentInline'
 /// name = 'DependentInline'
 /// status = 'active'
 /// description = 'Example demonstrating inline dependent rules in a then { } block'

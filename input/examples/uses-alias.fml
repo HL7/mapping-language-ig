@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/UsesAlias'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/UsesAlias'
 /// name = 'UsesAlias'
 /// status = 'active'
 /// description = 'Example demonstrating the alias keyword for uses declarations'

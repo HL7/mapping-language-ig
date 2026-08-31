@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupTypes'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/GroupTypes'
 /// name = 'GroupTypes'
 /// status = 'active'
 /// description = 'Example demonstrating the types stereotype marking a default mapping for a type pair'

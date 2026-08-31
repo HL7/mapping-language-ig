@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformCast'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformCast'
 /// name = 'TransformCast'
 /// status = 'active'
 /// description = 'Example demonstrating the cast transform for type conversion'

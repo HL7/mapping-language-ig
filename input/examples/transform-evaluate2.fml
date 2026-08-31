@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformEvaluate2'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformEvaluate2'
 /// name = 'TransformEvaluate2'
 /// status = 'active'
 /// description = 'Additional examples demonstrating the evaluate transform to execute a FHIRPath expression'

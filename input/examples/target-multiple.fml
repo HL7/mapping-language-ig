@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TargetMultiple'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TargetMultiple'
 /// name = 'TargetMultiple'
 /// status = 'active'
 /// description = 'Example demonstrating multiple target assignments in a single rule'

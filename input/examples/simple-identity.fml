@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SimpleIdentity'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SimpleIdentity'
 /// name = 'SimpleIdentity'
 /// status = 'active'
 /// description = 'Example demonstrating the identity transform shorthand src.element -> tgt.element'

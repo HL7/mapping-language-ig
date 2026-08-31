@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/fml/CodeSystem/map-model-mode"/>
+  <url value="http://hl7.org/fhir/uv/mapping-language/CodeSystem/map-model-mode"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.4.676"/>
@@ -40,7 +40,7 @@
   </contact>
   <description value="How the referenced structure is used in this mapping."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/uv/fml/ValueSet/vs-map-model-mode"/>
+  <valueSet value="http://hl7.org/fhir/uv/mapping-language/ValueSet/vs-map-model-mode"/>
   <content value="complete"/>
   <concept>
     <code value="source"/>

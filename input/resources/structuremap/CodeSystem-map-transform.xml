@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
-  <url value="http://hl7.org/fhir/uv/fml/CodeSystem/map-transform"/>
+  <url value="http://hl7.org/fhir/uv/mapping-language/CodeSystem/map-transform"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.4.682"/>
@@ -40,7 +40,7 @@
   </contact>
   <description value="How data is copied/created."/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/uv/fml/ValueSet/vs-map-transform"/>
+  <valueSet value="http://hl7.org/fhir/uv/mapping-language/ValueSet/vs-map-transform"/>
   <content value="complete"/>
   <property>
     <code value="fhirpath">
@@ -48,7 +48,7 @@
         <valueString value="FHIRPath Equivalent"/>
       </extension>
     </code>
-    <uri value="http://hl7.org/fhir/uv/fml/CodeSystem/map-transform#fhirpath"/>
+    <uri value="http://hl7.org/fhir/uv/mapping-language/CodeSystem/map-transform#fhirpath"/>
     <description value="FHIRPath equivalent for transform function"/>
     <type value="string"/>
   </property>

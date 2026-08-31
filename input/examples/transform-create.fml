@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformCreate'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformCreate'
 /// name = 'TransformCreate'
 /// status = 'active'
 /// description = 'Example demonstrating the create transform to construct a new typed instance'

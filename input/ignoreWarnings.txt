@@ -16,7 +16,7 @@ INFORMATION: CodeSystem/map-transform: CodeSystem: Most code systems defined in 
 %.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
 
 # license codesystem referenced by the IG Publisher
-INFORMATION: ImplementationGuide/hl7.fhir.uv.fml: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
+INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
 
 # All these are copies using the simple identity approach - no variable name is needed
 %: The source statement doesn't assign a variable to the source - check that this is what is intended

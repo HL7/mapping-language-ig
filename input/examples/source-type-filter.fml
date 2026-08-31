@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceTypeFilter'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceTypeFilter'
 /// name = 'SourceTypeFilter'
 /// status = 'active'
 /// description = 'Example demonstrating source type filtering with the : type syntax'

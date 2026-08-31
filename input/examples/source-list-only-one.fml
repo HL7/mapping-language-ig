@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListOnlyOne'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceListOnlyOne'
 /// name = 'SourceListOnlyOne'
 /// status = 'active'
 /// description = 'Example demonstrating the only_one list option that errors on multiple elements'

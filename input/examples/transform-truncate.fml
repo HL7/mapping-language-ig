@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformTruncate'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformTruncate'
 /// name = 'TransformTruncate'
 /// status = 'active'
 /// description = 'Example demonstrating the truncate transform to limit string length'

@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformC'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformC'
 /// name = 'TransformC'
 /// status = 'active'
 /// description = 'Example demonstrating the c transform to create a Coding'

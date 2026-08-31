@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformCc'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformCc'
 /// name = 'TransformCc'
 /// status = 'active'
 /// description = 'Example demonstrating the cc transform to create a CodeableConcept'

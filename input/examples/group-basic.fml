@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/GroupBasic'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/GroupBasic'
 /// name = 'GroupBasic'
 /// status = 'active'
 /// description = 'Example demonstrating a basic group with typed source and target parameters'

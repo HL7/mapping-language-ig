@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructArrayToProp'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/StructArrayToProp'
 /// name = 'StructArrayToProp'
 /// status = 'active'
 /// description = 'Example demonstrating extracting a single value from an array into a scalar property'

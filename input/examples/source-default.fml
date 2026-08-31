@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceDefault'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceDefault'
 /// name = 'SourceDefault'
 /// status = 'active'
 /// description = 'Example demonstrating the default keyword for fallback values'

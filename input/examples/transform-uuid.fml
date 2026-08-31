@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformUuid'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformUuid'
 /// name = 'TransformUuid'
 /// status = 'active'
 /// description = 'Example demonstrating the uuid transform to generate a unique identifier'

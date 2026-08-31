@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/Constants'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/Constants'
 /// name = 'Constants'
 /// status = 'active'
 /// description = 'Example demonstrating reusable constants defined with the let keyword'

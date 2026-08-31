@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformId'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformId'
 /// name = 'TransformId'
 /// status = 'active'
 /// description = 'Example demonstrating the id transform to create an Identifier'

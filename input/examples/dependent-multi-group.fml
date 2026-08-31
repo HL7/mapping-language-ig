@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/DependentMultiGroup'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/DependentMultiGroup'
 /// name = 'DependentMultiGroup'
 /// status = 'active'
 /// description = 'Example demonstrating invoking multiple groups in sequence separated by commas'

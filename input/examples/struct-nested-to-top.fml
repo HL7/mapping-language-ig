@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/StructNestedToTop'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/StructNestedToTop'
 /// name = 'StructNestedToTop'
 /// status = 'active'
 /// description = 'Example demonstrating pulling a nested child element up to a top-level property'

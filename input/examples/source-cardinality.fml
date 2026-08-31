@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceCardinality'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceCardinality'
 /// name = 'SourceCardinality'
 /// status = 'active'
 /// description = 'Example demonstrating cardinality constraints on source elements'

@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/Imports'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/Imports'
 /// name = 'Imports'
 /// status = 'active'
 /// description = 'Example demonstrating the imports statement with wildcard support'
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
-imports "http://hl7.org/fhir/uv/fml/StructureMap/Simple*"
+imports "http://hl7.org/fhir/uv/mapping-language/StructureMap/Simple*"
 
 group Imports(source src : Patient, target tgt : Patient) {
   src.gender as v -> tgt.gender = v then SimpleIdentity(src, tgt) "testRule";

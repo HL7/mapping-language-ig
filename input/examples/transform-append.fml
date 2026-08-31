@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/TransformAppend'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformAppend'
 /// name = 'TransformAppend'
 /// status = 'active'
 /// description = 'Example demonstrating the append transform to concatenate string values'

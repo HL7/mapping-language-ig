@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListNotFirst'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceListNotFirst'
 /// name = 'SourceListNotFirst'
 /// status = 'active'
 /// description = 'Example demonstrating the not_first list option to skip the first element'

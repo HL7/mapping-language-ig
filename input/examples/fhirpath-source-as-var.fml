@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/FhirPathSourceAsVar'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/FhirPathSourceAsVar'
 /// name = 'FhirPathSourceAsVar'
 /// status = 'active'
 /// description = 'Example demonstrating the where clause for filtering source elements with FHIRPath'

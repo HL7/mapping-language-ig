@@ -1,4 +1,4 @@
-/// url = 'http://hl7.org/fhir/uv/fml/StructureMap/SourceListFirst'
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/SourceListFirst'
 /// name = 'SourceListFirst'
 /// status = 'active'
 /// description = 'Example demonstrating the first list option to select only the first element'
