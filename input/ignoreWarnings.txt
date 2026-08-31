@@ -22,7 +22,7 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGui
 %: The source statement doesn't assign a variable to the source - check that this is what is intended
 
 # The FML narrative text is rendering self links which appear to be external and non-versioned so report the issue
-%is a canonical link and is therefore unsafe with regard to versions
+%is a canonical reference, and is unsafe because of version handling (points to the current version, not this version)
 
 # Core resources shouldn't be deciding if a search parameter specifically supports multiples or not
 % Constraint failed: spd-6: 'Values for multipleOr and multipleAnd should be provided for clarity (multipleOr.exists() and multipleAnd.exists())' (defined in http://hl7.org/fhir/StructureDefinition/SearchParameter)
