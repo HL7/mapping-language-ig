@@ -1,0 +1,13 @@
+/// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/TransformCcObs'
+/// name = 'TransformCcObs'
+/// status = 'active'
+/// description = 'Example demonstrating the cc transform to create a CodeableConcept into a choice type element'
+
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as source
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
+
+// Create 3 codeableconcepts in the output, each demonstrating a different way to populate a CodeableConcept using cc()
+group TransformCc(source src : Observation, target tgt : Observation) {
+  src -> tgt.value = cc('Non coded text', 'oth') "TextOnlyCC";
+}
+

@@ -1,6 +1,6 @@
 /// url = 'http://hl7.org/fhir/uv/mapping-language/StructureMap/ConceptMapEmbedded'
 /// name = 'ConceptMapEmbedded'
-/// status = 'active'
+/// status = 'draft'
 /// description = 'Example Map to demonstrate an embedded ConceptMap'
 
 conceptmap "GenderMap" {

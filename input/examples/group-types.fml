@@ -5,8 +5,18 @@
 
 uses "http://hl7.org/fhir/StructureDefinition/HumanName" as source
 uses "http://hl7.org/fhir/StructureDefinition/HumanName" as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group UseDefaultTypes(source srcP : Patient, target tgtP : Patient) {
+  // this rule will resolve the HumanName source/target types
+  // to the GroupTypes group and call it
+  srcP.name -> tgtP.name;
+}
 
 group GroupTypes(source src : HumanName, target tgt : HumanName) <<types>> {
+  // This specific default group for mapping names will only copy the family and text,
+  // all other properties will be dropped
   src.family as v -> tgt.family = v;
   src.text as v -> tgt.text = v;
 }

@@ -8,7 +8,9 @@ uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 
 group SourceMultiple(source src : Patient, target tgt : Patient) {
   // fires for each combination of name and identifier
+  // (and just tacks the identifier onto the family name in the text)
   src.name as n, src.identifier as id -> tgt.name as tn then {
-    n.family as f -> tn.family = f "r1";
+    n.family as f -> tn.family = f, tn.text = (f & '-' & %id.value) "r1";
+    id.value -> tn.given;
   } "r2";
 }

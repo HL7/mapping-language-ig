@@ -8,8 +8,11 @@ uses "http://hl7.org/fhir/StructureDefinition/Bundle" as target
 uses "http://hl7.org/fhir/StructureDefinition/Encounter" as produced
 
 group TransformReference(source src : Patient, target tgt : Bundle) {
+  // add in the patient to the bundle as is
+  src -> tgt.entry as patEntry, patEntry.resource = src "patEntry";
   src -> create('Encounter') as enc, tgt.entry as entry then {
-    src -> entry.resource = enc "r1";
-    src.id as v -> enc.subject = reference(src) "r2";
-  } "referenceTest";
+    src.id as v -> enc.subject as s, s.reference = reference(src) "r2";
+    // Note the encounter entry is added after it has been populated
+    src -> entry.resource = enc "encounterEntry";
+  } "encEntry";
 }

@@ -9,5 +9,6 @@ uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
 group TransformC(source src : Basic, target tgt : Basic) {
   src -> tgt.code as cc then {
     src -> cc.coding = c('http://example.org/cs', 'test', 'Test Coding') "r1";
+    src -> cc.coding = c('http://example.org/cs', 'test') "CodingWithoutDisplay";
   } "r2";
 }

@@ -3,9 +3,13 @@
 /// status = 'active'
 /// description = 'Example demonstrating the cc transform to create a CodeableConcept'
 
-uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
-uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" as source
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" as target
 
-group TransformCc(source src : Basic, target tgt : Basic) {
-  src -> tgt.code = cc('http://example.org/cs', 'example', 'Example Code') "r1";
+// Create 3 codeableconcepts in the output, each demonstrating a different way to populate a CodeableConcept using cc()
+group TransformCc(source src : Encounter, target tgt : Encounter) {
+  src -> tgt.type = cc('http://example.org/cs', 'example', 'Example Code') "FullCoding";
+  src -> tgt.type = cc('http://example.org/cs', 'example') "CodingWithoutDisplay";
+  src -> tgt.type = cc('Non coded text') "TextOnlyCC";
 }
+

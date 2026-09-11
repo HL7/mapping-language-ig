@@ -9,6 +9,6 @@ uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
 let defaultSystem = 'http://example.org/systems/id';
 let maxLen = 20;
 
-group Constants(source src : Patient, target tgt : Patient) {
+group ConstantsGroup(source src : Patient, target tgt : Patient) {
   src.id as v -> tgt.id = truncate(v, maxLen) "r1";
 }
