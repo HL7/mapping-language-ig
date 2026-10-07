@@ -4,8 +4,10 @@
 /// description = 'Example demonstrating the translate transform using a ConceptMap for code mapping'
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
-uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
 
-group TransformTranslate(source src : Patient, target tgt : Patient) {
-  src.gender as v -> tgt.gender = translate(v, 'http://example.org/ConceptMap/gender-map', 'code') "r1";
+group TransformTranslate(source src : Patient, target tgt : Observation) {
+  src.address as v -> tgt.component as t then {
+    v.use as u -> t.code = translate(u, 'http://hl7.org/fhir/ConceptMap/101', 'CodeableConcept') "mapUse";
+  } "Address";
 }

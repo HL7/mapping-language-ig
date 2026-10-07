@@ -12,21 +12,14 @@ INFORMATION: CodeSystem/map-source-list-mode: CodeSystem: Most code systems defi
 INFORMATION: CodeSystem/map-target-list-mode: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/map-transform: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# the fhirpath primitive types are commonly used in FML (not really an experimental codesystem)
-%.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
+# the fhirpath primitive types are commonly used in FML (not really an experimental codesystem) https://jira.hl7.org/browse/FHIR-58822
+%.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-snapshot1
 
 # license codesystem referenced by the IG Publisher
-INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
+INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7 from active ValueSet http://hl7.org/fhir/ValueSet/spdx-license|6.0.0-snapshot1
 
 # All these are copies using the simple identity approach - no variable name is needed
 %: The source statement doesn't assign a variable to the source - check that this is what is intended
-
-# The FML narrative text is rendering self links which appear to be external and non-versioned so report the issue
-%is a canonical reference, and is unsafe because of version handling (points to the current version, not this version)
-
-# Core resources shouldn't be deciding if a search parameter specifically supports multiples or not
-% Constraint failed: spd-6: 'Values for multipleOr and multipleAnd should be provided for clarity (multipleOr.exists() and multipleAnd.exists())' (defined in http://hl7.org/fhir/StructureDefinition/SearchParameter)
-
 
 # IG Publisher/Validator issue with FML examples converting to additional resources https://chat.fhir.org/#narrow/channel/179165-committers/topic/Additional.20Resources.20examples.20issue/with/617128491
 %This resource is an additional resource, so must have a resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/StructureMap|0.1.0'
@@ -37,9 +30,3 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGui
 
 # This is a test of using backticks to delimit identifiers that contain values not otherwise able to be used as identifier (which can occur in logical models representing non fhir data structures)
 %id value 'group!' is not valid
-
-# Bug in the Validator (PR incoming) - 
-%Transform evaluate takes 1 parameter(s) but 2 were found
-
-# StructureMap doesn't have a way to reference the embedded conceptmap, so this issue is unresolved. FHIR-58741
-ERROR: StructureMap/ConceptMapEmbedded: StructureMap.contained[0]: The contained resource 'GenderMap' is not referenced to from elsewhere in the containing resource nor does it refer to the containing resource (dom-3)

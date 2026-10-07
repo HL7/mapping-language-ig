@@ -14,8 +14,8 @@ conceptmap "GenderMap" {
 }
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
-uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
 
-group ConceptMapEmbedded(source src : Patient, target tgt : Patient) {
-  src.gender as v -> tgt.gender = translate(v, '#GenderMap', 'code') "r1";
+group ConceptMapEmbedded(source src : Patient, target tgt : Observation) {
+  src.gender as v -> tgt.value = translate(v, '#GenderMap', 'CodeableConcept') "r1";
 }

@@ -7,5 +7,6 @@ uses "http://hl7.org/fhir/StructureDefinition/Basic" as source
 uses "http://hl7.org/fhir/StructureDefinition/Basic" as target
 
 group TransformCast(source src : Basic, target tgt : Basic) {
-  src.id as v -> tgt.id = cast(v, 'string') "r1";
+  src.id as v -> tgt.id = cast(v, 'string') "castWithType";
+  src.id as v -> tgt.id = cast(v) "castWithoutType";
 }

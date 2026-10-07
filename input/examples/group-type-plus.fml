@@ -3,10 +3,27 @@
 /// status = 'active'
 /// description = 'Example demonstrating the type+ stereotype that also creates the target type when not fixed'
 
-uses "http://hl7.org/fhir/StructureDefinition/Identifier" as source
-uses "http://hl7.org/fhir/StructureDefinition/Identifier" as target
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as source
+uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" as source
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" as target
 
-group GroupTypePlus(source src : Identifier, target tgt : Identifier) <<type+>> {
-  src.system as v -> tgt.system = v;
-  src.value as v -> tgt.value = v;
+group UseDefaultTypePlus(source src : Observation, target tgt : Observation) {
+  src.id -> tgt.id;
+  // the datatype of contained is Resource (which is the base for all resources)
+  // thus the source/target mapping isn't enough to work out what to do here.
+  // So FML falls back to the "default" map to use given this source type
+  src.contained -> tgt.contained;
+}
+
+group GroupTypePlusPatient(source src : Patient, target tgt : Patient) <<type+>> {
+  src.id -> tgt.id;
+  src.name -> tgt.name;
+}
+
+group GroupTypePlusPractitioner(source src : Practitioner, target tgt : Practitioner) <<type+>> {
+  src.id -> tgt.id;
+  src.name -> tgt.name;
 }

@@ -8,4 +8,6 @@ uses "http://hl7.org/fhir/StructureDefinition/Observation" as target
 
 group TransformQty(source src : Observation, target tgt : Observation) {
   src -> tgt.value = qty(42, 'kg', 'http://unitsofmeasure.org', 'kg') "r1";
+  src -> tgt.component as c, c.value = qty(42, 'kg') "r2";
+  src -> tgt.component as c, c.value = qty('12 kg') "r3";
 }
