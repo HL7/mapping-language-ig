@@ -125,7 +125,7 @@
 				<severity value="warning"/>
 				<human value="URL should not contain | or # - these characters make processing canonical references problematic"/>
 				<expression value="exists() implies matches('^[^|# ]+$')"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/CanonicalResource"/>
+				<!-- <source value="http://hl7.org/fhir/StructureDefinition/CanonicalResource"/> -->
 			</constraint>
 			<isSummary value="true"/>
 			<mapping>
@@ -981,6 +981,17 @@
 			</type>
 			<isSummary value="true"/>
 		</element>
+		<element id="StructureMap.group.rule.target.parameter.name">
+			<path value="StructureMap.group.rule.target.parameter.name"/>
+			<short value="Name of the transform parameter"/>
+			<definition value="Name of the transform parameter, when specified."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+			<isSummary value="true"/>
+		</element>
 		<element id="StructureMap.group.rule.target.parameter.value[x]">
 			<path value="StructureMap.group.rule.target.parameter.value[x]"/>
 			<short value="Parameter value - variable or literal"/>
@@ -1053,7 +1064,41 @@
 			<definition value="Parameter to pass to the rule or group."/>
 			<min value="1"/>
 			<max value="*"/>
-			<contentReference value="#StructureMap.group.rule.target.parameter"/>
+			<type>
+				<code value="BackboneElement"/>
+			</type>
+			<isSummary value="true"/>
+		</element>
+		<element id="StructureMap.group.rule.dependent.parameter.value[x]">
+			<path value="StructureMap.group.rule.dependent.parameter.value[x]"/>
+			<short value="Parameter value - variable or literal"/>
+			<definition value="Parameter value - variable or literal."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="id"/>
+			</type>
+			<type>
+				<code value="string"/>
+			</type>
+			<type>
+				<code value="boolean"/>
+			</type>
+			<type>
+				<code value="integer"/>
+			</type>
+			<type>
+				<code value="decimal"/>
+			</type>
+			<type>
+				<code value="date"/>
+			</type>
+			<type>
+				<code value="time"/>
+			</type>
+			<type>
+				<code value="dateTime"/>
+			</type>
 			<isSummary value="true"/>
 		</element>
 		<element id="StructureMap.group.rule.documentation">
