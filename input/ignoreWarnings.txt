@@ -1,7 +1,7 @@
 == Suppressed Messages ==
 
 
-# Other warning/info messages
+# Conformance language still to be cleaned up in the IG from the last published version
 INFORMATION: en/fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
 
 # These code systems are bound to code elements with a required binding
@@ -25,5 +25,30 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGui
 %Primitive types should not only be whitespace
 %value should not start or finish with whitespace ' - '
 
-# This is a test of using backticks to delimit identifiers that contain values not otherwise able to be used as identifier (which can occur in logical models representing non fhir data structures)
-%id value 'group!' is not valid
+# This is a test of using backticks to delimit identifiers that contain values not otherwise able to be used as identifier (which can occur in logical models representing non fhir data structures - but don't have a logical model to back these - just an example to verify parser/narrative generation)
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0].name: id value 'group!' is not valid
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0]: The name group! is not valid
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0].source[0].element[0]: The source path src.group! refers to the path Basic.group! which is unknown
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0].target[0].element[0]: The target path tgt.group# refers to the path Basic.group# which is unknown
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[1].source[0].element[0]: The source path src.section4.5 refers to the path Basic.section4.5 which is unknown
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[1].target[0].element[0]: The target path tgt.section4.5 refers to the path Basic.section4.5 which is unknown
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[2].source[0].element[0]: The source path src.section4.6 refers to the path Basic.section4.6 which is unknown
+ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[2].target[0].element[0]: The target path tgt.section4.6 refers to the path Basic.section4.6 which is unknown
+
+# Observation.value doesn't have a required binding, so this warning just indicates that further validation of the conceptmap is not possible
+WARNING: StructureMap/TransformTranslate: StructureMap.group[0].rule[0].rule[0].target[0]: The target variable does not have a required binding, so this concept map can't be checked
+
+# StructureMap.versionAlgorithm is defined this way in all other canonical resources, not sure why this is an error here.
+WARNING: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[12]: Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding (type.where(code in 'code' | 'Coding' | 'CodeableConcept' | 'CodeableReference' | 'uri' | 'string' | 'Quantity').count() > 1 implies binding.empty())' at StructureMap.versionAlgorithm[x] (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition/StructureMap: StructureDefinition.differential.element[4]: Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding (type.where(code in 'code' | 'Coding' | 'CodeableConcept' | 'CodeableReference' | 'uri' | 'string' | 'Quantity').count() > 1 implies binding.empty())' at StructureMap.versionAlgorithm[x] (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+INFORMATION: StructureDefinition/StructureMap: StructureDefinition.differential.element[4].binding: The element StructureMap.versionAlgorithm[x] has a binding, and has multiple types subject to bindings ([string, Coding]). The binding will apply to all the types
+
+# This warning comes from the snapshot generator for the Resource.language property
+WARNING: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[4].binding.additional[0]: Constraint failed: eld-31: 'additionalBindings should have a key (key.exists())' at StructureMap.language (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+
+# The target type for the translate example is to a choice type, so the FML validator doesn't check any further than it has
+WARNING: StructureMap/ConceptMapEmbedded: StructureMap.group[0].rule[0].target[0]: Multiple types are possible here (Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period, Attachment) so further type checking is not possible
+
+# Further work required in the FML validator to derive type information from the create() function, and then chain into following targets
+WARNING: StructureMap/TransformReference: StructureMap.group[0].rule[0].target[1]: The value of the type parameter for copy could not be processed
+WARNING: StructureMap/TransformReference: StructureMap.group[0].rule[1].rule[1].target[0]: The value of the type parameter for copy could not be processed
