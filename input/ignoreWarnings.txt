@@ -26,8 +26,6 @@ INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGui
 %value should not start or finish with whitespace ' - '
 
 # This is a test of using backticks to delimit identifiers that contain values not otherwise able to be used as identifier (which can occur in logical models representing non fhir data structures - but don't have a logical model to back these - just an example to verify parser/narrative generation)
-ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0].name: id value 'group!' is not valid
-ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0]: The name group! is not valid
 ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0].source[0].element[0]: The source path src.group! refers to the path Basic.group! which is unknown
 ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[0].target[0].element[0]: The target path tgt.group# refers to the path Basic.group# which is unknown
 ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[1].source[0].element[0]: The source path src.section4.5 refers to the path Basic.section4.5 which is unknown
