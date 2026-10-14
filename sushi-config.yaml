@@ -70,6 +70,9 @@ pages:
     title: Home
   fml.md:
     title: Specification
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   transforms.md:
     title: Target Transform Functions
   grammar.md:
@@ -78,6 +81,8 @@ pages:
     title: FML Tutorial
   changes.md:
     title: Change Log
+  debug.md:
+    title: Debug Trace
   examples.md:
     title: FML Annotated Examples
 
@@ -90,4 +95,5 @@ menu:
   FHIR Artifacts:
     Annotated Examples: examples.html
     Artifacts: artifacts.html
+    Debug Trace: debug.html
     Change Log: changes.html
