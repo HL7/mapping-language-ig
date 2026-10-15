@@ -1,5 +1,16 @@
 == Suppressed Messages ==
 
+# the fhirpath primitive types are commonly used in FML (not really an experimental codesystem) https://jira.hl7.org/browse/FHIR-58822
+%.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-snapshot1
+
+# All these are copies using the simple identity approach - no variable name is needed
+%: The source statement doesn't assign a variable to the source - check that this is what is intended
+
+# The target (Observation.value) doesn't have a required binding, so this warning just indicates that further validation of the conceptmap is not possible
+% The target variable does not have a required binding, so this concept map can't be checked
+
+# Further work required in the FML validator to derive type information from the create() function, and then chain into following targets
+% The value of the type parameter for copy could not be processed
 
 # Conformance language still to be cleaned up in the IG from the last published version
 INFORMATION: en/fml.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: ' All names defined by the map language - group, rule and variable names - must be valid ids (1-64 characters, upper and lowercase letters, numbers, dashes and dots).  To avoid parsing ambiguities however, they SHALL start with a character, cannot be one of the keywords used in the language (see section Reserved Keywords below) and cannot contain a dot or dash. These id values SHALL NOT be surrounded with backticks. The names of context elements (source.context and target.context) are not constrained to simple names in the same way since they come from the source and target data models, and these may be  surrounded with backticks. '
@@ -12,14 +23,8 @@ INFORMATION: CodeSystem/map-source-list-mode: CodeSystem: Most code systems defi
 INFORMATION: CodeSystem/map-target-list-mode: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/map-transform: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# the fhirpath primitive types are commonly used in FML (not really an experimental codesystem) https://jira.hl7.org/browse/FHIR-58822
-%.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-snapshot1
-
 # license codesystem referenced by the IG Publisher
 INFORMATION: ImplementationGuide/hl7.fhir.uv.mapping-language: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7 from active ValueSet http://hl7.org/fhir/ValueSet/spdx-license|6.0.0-snapshot1
-
-# All these are copies using the simple identity approach - no variable name is needed
-%: The source statement doesn't assign a variable to the source - check that this is what is intended
 
 # Handling whitespace is not uncommon in maps when concatenating fields with whitespace seperators
 %Primitive types should not only be whitespace
@@ -33,9 +38,6 @@ ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[1].target[0].ele
 ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[2].source[0].element[0]: The source path src.section4.6 refers to the path Basic.section4.6 which is unknown
 ERROR: StructureMap/SyntaxBackticks: StructureMap.group[0].rule[2].target[0].element[0]: The target path tgt.section4.6 refers to the path Basic.section4.6 which is unknown
 
-# Observation.value doesn't have a required binding, so this warning just indicates that further validation of the conceptmap is not possible
-WARNING: StructureMap/TransformTranslate: StructureMap.group[0].rule[0].rule[0].target[0]: The target variable does not have a required binding, so this concept map can't be checked
-
 # StructureMap.versionAlgorithm is defined this way in all other canonical resources, not sure why this is an error here.
 WARNING: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[12]: Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding (type.where(code in 'code' | 'Coding' | 'CodeableConcept' | 'CodeableReference' | 'uri' | 'string' | 'Quantity').count() > 1 implies binding.empty())' at StructureMap.versionAlgorithm[x] (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 WARNING: StructureDefinition/StructureMap: StructureDefinition.differential.element[4]: Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding (type.where(code in 'code' | 'Coding' | 'CodeableConcept' | 'CodeableReference' | 'uri' | 'string' | 'Quantity').count() > 1 implies binding.empty())' at StructureMap.versionAlgorithm[x] (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
@@ -47,6 +49,3 @@ WARNING: StructureDefinition/StructureMap: StructureDefinition.snapshot.element[
 # The target type for the translate example is to a choice type, so the FML validator doesn't check any further than it has
 WARNING: StructureMap/ConceptMapEmbedded: StructureMap.group[0].rule[0].target[0]: Multiple types are possible here (Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period, Attachment) so further type checking is not possible
 
-# Further work required in the FML validator to derive type information from the create() function, and then chain into following targets
-WARNING: StructureMap/TransformReference: StructureMap.group[0].rule[0].target[1]: The value of the type parameter for copy could not be processed
-WARNING: StructureMap/TransformReference: StructureMap.group[0].rule[1].rule[1].target[0]: The value of the type parameter for copy could not be processed
